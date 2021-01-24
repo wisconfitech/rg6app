@@ -1,0 +1,111 @@
+a {
+    text-decoration: none !important;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../../../assets/image/icon/sort_down.png) no-repeat 97% 50%;
+    height: 2.8rem !important;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.dim-input {
+    height: 2.8rem !important;
+}
+
+.logo {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.top-mp {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.rounded-10 {
+    border-radius: 10px;
+}
+
+.bg-focus {
+    background-image: -webkit-radial-gradient(center center, rgb(255, 255, 255) 75.7463%, rgb(197, 197, 197) 100%);
+}
+
+.bg-dark {
+    background-color: #404040;
+}
+
+.bg-dark2 {
+    background-color: #979797   ;
+}
+
+.bg-pale-grey {
+    background-color: #f0f2f5;
+}
+
+.bg-basic-blue {
+    background-color: #2371e3;
+}
+
+.bg-avatar-dodo {
+    background-color: #4d9764;
+    height: 200px;
+    width: 200px;
+    padding: 1rem;
+}
+
+.btn-rg-white {
+    color: #979797;
+    background-color: #ffffff;
+}
+
+.btn-rg-blue {
+    color: #ffffff;
+    background-color: #2371e3;
+}
+
+.btn-rg-blue:hover {
+    color: #ffffff;
+    background-color: #0069d9;
+}
+
+.btn-mp {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.btn-mp-s {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+.btn-account-info {
+    width: 2rem;
+    height: 2rem;
+}
+
+.dim-per32 {
+    width: 32%;
+}
+
+.dim-per47 {
+    width: 47%;
+}
+
+.vh100 {
+    height: 100vh;
+}
+
+.mb-push-contents {
+    padding-bottom: 3.6rem;
+}
+
+.card-account {
+    height: 10rem;
+}
+
