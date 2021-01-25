@@ -109,3 +109,21 @@ select::-ms-expand {
     height: 10rem;
 }
 
+.goal-status {
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 100rem;
+    color: #ffffff;
+}
+
+.dim-per30 {
+    width: 30%;
+}
+
+.rounded-100 {
+    border-radius: 100rem;
+}
+
