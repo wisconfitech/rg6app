@@ -24,8 +24,57 @@ select::-ms-expand {
     display: none;
 }
 
-/*체크박스*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f0f2f5;
+    overflow-x: hidden;
+    transition: 0.1s;
+    padding-top: 60px;
+}
 
+.sidenav a {
+    padding: 8px 8px 8px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    position: relative;
+    display: block;
+    transition: 0.1s;
+}
+
+.sidenav p {
+    padding: 8px 8px 8px 30px;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #000000;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* 체크박스 */
 input[type="checkbox"] {
     display: none;
 }
@@ -40,8 +89,6 @@ input[type="checkbox"] + label {
     cursor: pointer;
     background-size: cover;
 }
-
-
 
 input[type="checkbox"]:checked + label {
     background: url(../image/icon/checkbox.svg) -29px top no-repeat;
@@ -91,7 +138,7 @@ input[type="checkbox"]:checked + label {
 }
 
 .bg-pale-grey {
-    background-color: #f0f2f5;
+    background-color: #f7f9fa;
 }
 
 .bg-tomato {
@@ -194,7 +241,7 @@ input[type="checkbox"]:checked + label {
 }
 
 .btn-left-button {
-    background-color: #f0f2f5;
+    background-color: #f7f9fa;
     opacity: 0.9;
     color: #000;
 }
@@ -397,7 +444,6 @@ input[type="checkbox"]:checked + label {
 }
 
 /* <- 레벨선택 */
-
 .modal-bg {
     max-width: 414px;
     padding: 20px;
@@ -487,10 +533,43 @@ input[type="checkbox"]:checked + label {
     align-items: center;
     font-weight: bold;
     display: -ms-flexbox !important;
-
 }
 
 .book-checkbox {
     right: 0.1rem;
     top: 0.6rem;
+}
+
+@media (max-width:375px) {
+    .top-alret {
+        max-width: 220px;
+    }
+}
+
+/* 2021-02-10 */
+.box-category {
+}
+
+.space-top {
+    padding-top: 61px;
+}
+
+.dropdown-menu.common-top {
+    min-width: 300px;
+}
+
+.space-bottom {
+    height: 100px;
+}
+
+.box-common-side-menu {
+    width: 200px;
+}
+
+.bg-selected {
+    background-color: #E13939;
+}
+
+.btn-rg-red {
+    background-color: #E13939;
 }
