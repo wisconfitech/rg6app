@@ -1,3 +1,13 @@
+:root {
+    --pale-grey: #f0f2f5;
+    --brown-grey: #979797;
+    --dark-sky-blue: #30a7f0;
+    --true-green: #10ab00;
+    --orange-yellow: #faa500;
+    --tomato: #e13939;
+    --brick-orange: #cd3d0f;
+}
+
 a {
     text-decoration: none !important;
 }
@@ -14,8 +24,83 @@ select::-ms-expand {
     display: none;
 }
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f0f2f5;
+    overflow-x: hidden;
+    transition: 0.1s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    position: relative;
+    display: block;
+    transition: 0.1s;
+}
+
+.sidenav p {
+    padding: 8px 8px 8px 30px;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #000000;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* 체크박스 */
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: -2px 10px 0 0;
+    vertical-align: middle;
+    background: url(../image/icon/checkbox.svg) left top no-repeat;
+    cursor: pointer;
+    background-size: cover;
+}
+
+input[type="checkbox"]:checked + label {
+    background: url(../image/icon/checkbox.svg) -29px top no-repeat;
+    background-size: cover;
+}
+
 .dim-input {
     height: 2.8rem !important;
+}
+
+.dim-per30 {
+    width: 30%;
 }
 
 .logo {
@@ -24,8 +109,20 @@ select::-ms-expand {
 }
 
 .top-mp {
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+@media (max-width:768px) {
+    .top-space {
+        padding-top: 61px;
+    }
+}
+
+@media (min-width:769px) {
+    .top-space {
+        padding-top: 65px;
+    }
 }
 
 .rounded-10 {
@@ -37,15 +134,31 @@ select::-ms-expand {
 }
 
 .bg-dark {
-    background-color: #404040;
-}
-
-.bg-dark2 {
-    background-color: #979797   ;
+    background-color: #979797;
 }
 
 .bg-pale-grey {
-    background-color: #f0f2f5;
+    background-color: #f7f9fa;
+}
+
+.bg-tomato {
+    background-color: #e13939;
+}
+
+.bg-brick-orange {
+    background-color: #cd3d0f;
+}
+
+.bg-dark-sky-blue {
+    background-color: #30a7f0;
+}
+
+.bg-true-green {
+    background-color: #10ab00;
+}
+
+.bg-orange-yellow {
+    background-color: #faa500;
 }
 
 .bg-basic-blue {
@@ -59,6 +172,25 @@ select::-ms-expand {
     padding: 1rem;
 }
 
+.bg-recommend {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-left-menu {
+    color: #00c4c9 !important;
+}
+
+.bg-shadow-box {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* 버튼 */
 .btn-rg-white {
     color: #979797;
     background-color: #ffffff;
@@ -89,6 +221,37 @@ select::-ms-expand {
     height: 2rem;
 }
 
+.btn-lib-level {
+    background: #FFFFFF;
+    border: 1px solid #404040 !important;
+    border-radius: 20px;
+}
+
+.btn-lib-level2 {
+    background: #FFFFFF;
+    border: 1px solid #C9C9C9 !important;
+    border-radius: 20px;
+}
+
+.btn-highlight {
+    height: 0.22rem;
+    left: 0;
+    right: 0;
+    bottom: -0.5px;
+}
+
+.btn-left-button {
+    background-color: #f7f9fa;
+    opacity: 0.9;
+    color: #000;
+}
+
+.btn-modal-delete {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
 .dim-per32 {
     width: 32%;
 }
@@ -117,13 +280,296 @@ select::-ms-expand {
     display: flex;
     border-radius: 100rem;
     color: #ffffff;
-}
-
-.dim-per30 {
-    width: 30%;
+    display: -ms-flexbox !important;
 }
 
 .rounded-100 {
     border-radius: 100rem;
 }
 
+@media (min-width:576px) {
+    .rounded-lg-10 {
+        border-radius: 10px;
+        border-top-width: 10px;
+        border-right-width: 10px;
+        border-bottom-width: 10px;
+        border-width: 10px;
+    }
+}
+
+.border-bottom-left-menu {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.border-left-menu {
+    border: 1px solid #404040 !important;
+}
+
+/* 레벨선택 -> */
+.btn-level {
+    padding: 10px 10px 10px 20px;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+    .btn-level {
+        padding: 10px 10px 10px 15px;
+        border-radius: 100px;
+        color: #ffffff;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .btn-level {
+        padding: 10px 10px 10px 10px;
+        border-radius: 100px;
+        color: #ffffff;
+        font-size: 20px;
+    }
+}
+
+.btn-level .book-count {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #2371e3;
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: -ms-flexbox !important;
+}
+
+.btn-level .book-count-black {
+    width: 30px;
+    height: 30px;
+    padding: 6px 6px;
+    border-radius: 100px;
+    background-color: #000000;
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: -ms-flexbox !important;
+}
+
+.bg-level-ka {
+    background-color: #fbce2a;
+}
+
+.bg-level-kb {
+    background-color: #fbb424;
+}
+
+.bg-level-kc {
+    background-color: #fa982c;
+}
+
+.bg-level-1a {
+    background-color: #f76b1f;
+}
+
+.bg-level-1b {
+    background-color: #f55030;
+}
+
+.bg-level-1c {
+    background-color: #ef364c;
+}
+
+.bg-level-2a {
+    background-color: #b1cb04;
+}
+
+.bg-level-2b {
+    background-color: #75cb04;
+}
+
+.bg-level-2c {
+    background-color: #43bd4b;
+}
+
+.bg-level-3a {
+    background-color: #48bcb7;
+}
+
+.bg-level-3b {
+    background-color: #45b1d0;
+}
+
+.bg-level-3c {
+    background-color: #449ddb;
+}
+
+.bg-level-4a {
+    background-color: #8a78d8;
+}
+
+.bg-level-4b {
+    background-color: #a95ed5;
+}
+
+.bg-level-4c {
+    background-color: #b052b1;
+}
+
+.bg-level-5a {
+    background-color: #aa874e;
+}
+
+.bg-level-5b {
+    background-color: #835c2e;
+}
+
+.bg-level-5c {
+    background-color: #684723;
+}
+
+.bg-level-6a {
+    background-color: #7c7b7b;
+}
+
+.bg-level-6b {
+    background-color: #504e4f;
+}
+
+.bg-level-6c {
+    background-color: #504e4f;
+}
+
+/* <- 레벨선택 */
+.modal-bg {
+    max-width: 414px;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1.5px #404040;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-title {
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #404040;
+    display: flex;
+    align-items: center;
+    display: -ms-flexbox !important;
+}
+
+.w-30per {
+    width: 30%;
+}
+
+.page-input-box {
+    width: 40px;
+}
+
+.top-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.z-index-main {
+    z-index: 1035;
+}
+
+.rounded-top-10 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.red-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background-color: #ea0000;
+    top: 0.6rem;
+    right: 0.6rem;
+}
+
+.badge-top {
+    left: 0.5rem;
+    top: 0.5rem;
+}
+
+.badge-red {
+    color: #fff;
+    background-color: #cd3d0f;
+    border: solid 2px #ffffff;
+    border-radius: 999px;
+    padding: 3px 8px 3px 8px;
+    font-size: 10px;
+}
+
+.book-point {
+    width: 3rem;
+    height: 3rem;
+    padding: 9px 7px 8px;
+    border: solid 2px #ffffff;
+    border-radius: 999px;
+    background-color: #faa500;
+    right: 0.2rem;
+    bottom: 0.2rem;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #404040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    display: -ms-flexbox !important;
+}
+
+.book-checkbox {
+    right: 0.1rem;
+    top: 0.6rem;
+}
+
+@media (max-width:375px) {
+    .top-alret {
+        max-width: 220px;
+    }
+}
+
+/* 2021-02-10 */
+.box-category {
+}
+
+.space-top {
+    padding-top: 61px;
+}
+
+.dropdown-menu.common-top {
+    min-width: 300px;
+}
+
+.space-bottom {
+    height: 100px;
+}
+
+.box-common-side-menu {
+    width: 200px;
+}
+
+.bg-selected {
+    background-color: #E13939;
+}
+
+.btn-rg-red {
+    background-color: #E13939;
+}
