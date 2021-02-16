@@ -242,7 +242,6 @@ input[type="checkbox"]:checked + label {
 
 .btn-left-button {
     background-color: #f7f9fa;
-    opacity: 0.9;
     color: #000;
 }
 
@@ -443,7 +442,7 @@ input[type="checkbox"]:checked + label {
     background-color: #504e4f;
 }
 
-/* <- 레벨선택 */
+/* 레벨선택 */
 .modal-bg {
     max-width: 414px;
     padding: 20px;
@@ -546,16 +545,13 @@ input[type="checkbox"]:checked + label {
     }
 }
 
-/* 2021-02-10 */
-.box-category {
-}
-
 .space-top {
     padding-top: 61px;
 }
 
 .dropdown-menu.common-top {
     min-width: 300px;
+    background-color: #f7f9fa;
 }
 
 .space-bottom {
@@ -572,4 +568,463 @@ input[type="checkbox"]:checked + label {
 
 .btn-rg-red {
     background-color: #E13939;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.rounded-bottom-10 {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* 달력 */
+.date tr td {
+    padding: 0 0 0 0;
+}
+
+.date .active {
+    background-color: #007bff !important;
+    color: #ffffff;
+}
+
+.date .replace {
+    background-image: url('../image/icon/replace-filled.png');
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+}
+
+@media (max-width:320px) {
+    .table {
+        font-size: 9px;
+    }
+}
+
+@media (max-width:375px) {
+    .table {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:375px) {
+    .date tr td {
+        width: 14%;
+    }
+
+    .date tr td div {
+        padding: 5px 0px 5px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: -ms-flexbox !important;
+        -ms-flex-pack: center !important;
+        -ms-flex-align: center !important;
+        background-color: #f2f7ff;
+    }
+
+    .date tr td div + div {
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: -ms-flexbox !important;
+        -ms-flex-pack: center !important;
+        -ms-flex-align: center !important;
+        background-color: #ffffff;
+        background-image: url('../image/icon/bg_cal_pass.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width:376px) {
+    .date tr td {
+        width: 14%;
+    }
+
+    .date tr td div {
+        padding: 7px 0px 7px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: -ms-flexbox !important;
+        -ms-flex-pack: center !important;
+        -ms-flex-align: center !important;
+        background-color: #f2f7ff;
+    }
+
+    .date tr td div + div {
+        min-height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: -ms-flexbox !important;
+        -ms-flex-pack: center !important;
+        -ms-flex-align: center !important;
+        background-color: #ffffff;
+        background-image: url('../image/icon/bg_cal_pass.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+.table thead th {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+.table tbody tr td {
+    border-top: 0px !important;
+}
+
+.date tr td div.today {
+    background-color: #ffc107;
+    color: #ffffff;
+}
+
+/*모달: 이달의 성과*/
+
+.col-12.medal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: -ms-flexbox !important;
+    -ms-flex-pack: center !important;
+    -ms-flex-align: center !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f0f2f5;
+    border-radius: 10px;
+}
+
+.col-12.performance {
+    padding-left: 8px;
+}
+
+.col-12.performance h4 {
+    color: #404040;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.col-12.performance p {
+    color: #404040;
+    font-size: 16px;
+    margin-bottom: 8px !important;
+}
+
+/*출석*/
+
+@media (max-width:375px) {
+
+    .date tr td div + div.level-up {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+    }
+
+    .date tr td div + div.attendance {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 44px;
+    }
+}
+
+@media (min-width:376px) {
+
+    .date tr td div + div.level-up {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 40px;
+    }
+
+    .date tr td div + div.attendance {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 55px;
+    }
+}
+
+/*레벨마스터 배지*/
+
+.date tr td div + div.level-up.master-ka {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_ka.png');
+}
+
+.date tr td div + div.level-up.master-kb {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_kb.png');
+}
+
+.date tr td div + div.level-up.master-kc {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_kc.png');
+}
+
+.date tr td div + div.level-up.master-1a {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_1a.png');
+}
+
+.date tr td div + div.level-up.master-1b {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_1b.png');
+}
+
+.date tr td div + div.level-up.master-1c {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_1c.png');
+}
+
+.date tr td div + div.level-up.master-2a {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_2a.png');
+}
+
+.date tr td div + div.level-up.master-2b {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_2b.png');
+}
+
+.date tr td div + div.level-up.master-2c {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_2c.png');
+}
+
+.date tr td div + div.level-up.master-3a {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_3a.png');
+}
+
+.date tr td div + div.level-up.master-3b {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_3b.png');
+}
+
+.date tr td div + div.level-up.master-3c {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_3c.png');
+}
+
+.date tr td div + div.level-up.master-4a {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_4a.png');
+}
+
+.date tr td div + div.level-up.master-4b {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_4b.png');
+}
+
+.date tr td div + div.level-up.master-4c {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_4c.png');
+}
+
+.date tr td div + div.level-up.master-5a {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_5a.png');
+}
+
+.date tr td div + div.level-up.master-5b {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_5b.png');
+}
+
+.date tr td div + div.level-up.master-5c {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_5c.png');
+}
+
+.date tr td div + div.level-up.master-6a {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_6a.png');
+}
+
+.date tr td div + div.level-up.master-6b {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_6b.png');
+}
+
+.date tr td div + div.level-up.master-6c {
+    background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_6c.png');
+}
+
+/*출석도장*/
+
+.date tr td div + div.attendance.dodo {
+    background-image: url('https://wcfresource.a1edu.com/NewSystem/image/Character/MainCharacter/Attend/img_dodo.png');
+}
+
+.date tr td div + div.attendance.koon {
+    background-image: url('https://wcfresource.a1edu.com/NewSystem/image/Character/MainCharacter/Attend/img_koon.png');
+}
+
+.date tr td div + div.attendance.pang {
+    background-image: url('https://wcfresource.a1edu.com/NewSystem/image/Character/MainCharacter/Attend/img_pang.png');
+}
+
+.date tr td div + div.attendance.juju {
+    background-image: url('https://wcfresource.a1edu.com/NewSystem/image/Character/MainCharacter/Attend/img_juju.png');
+}
+
+.date tr td div + div.attendance.momo {
+    background-image: url('https://wcfresource.a1edu.com/NewSystem/image/Character/MainCharacter/Attend/img_momo.png');
+}
+
+.date tr td div + div.attendance.bori {
+    background-image: url('https://wcfresource.a1edu.com/NewSystem/image/Character/MainCharacter/Attend/img_bori.png');
+}
+
+/*도서정보*/
+
+@media screen and (max-width: 350px) {
+    .book-info .start .btn {
+        border-radius: 999px;
+        background-color: #e13939;
+        color: #ffffff;
+        padding: 5px 12px;
+        margin-right: 6px;
+        font-size: 14px;
+    }
+
+    .book-info .title {
+        font-size: 16px;
+        color: #4a4a4a;
+    }
+
+    .book-info .author {
+        font-size: 14px;
+        color: #d2d2d2;
+    }
+}
+
+@media (min-width:351px) and (max-width:375px) {
+    .book-info .start .btn {
+        border-radius: 999px;
+        background-color: #e13939;
+        color: #ffffff;
+        padding: 5px 20px;
+        margin-right: 5px;
+        font-size: 16px;
+    }
+
+    .book-info .title {
+        font-size: 20px;
+        color: #4a4a4a;
+    }
+
+    .book-info .author {
+        font-size: 16px;
+        color: #d2d2d2;
+    }
+}
+
+
+@media screen and (min-width:376px) {
+    .book-info .start .btn {
+        border-radius: 999px;
+        background-color: #e13939;
+        color: #ffffff;
+        padding: 5px 20px;
+        margin-right: 5px;
+        font-size: 16px;
+    }
+
+    .book-info .title {
+        font-size: 20px;
+        color: #4a4a4a;
+    }
+
+    .book-info .author {
+        font-size: 16px;
+        color: #d2d2d2;
+    }
+}
+
+.book-info .start .btn:hover {
+    background-color: darkred;
+}
+
+.resources .btn {}
+
+
+/*공통상단*/
+
+.common-top .active {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+/*좌측*/
+
+.left-menu .left-btn {
+    position: relative;
+    background-color: #f7f9fa;
+    color: #000000;
+    padding: 12px 5px 12px 18px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.left-menu .left-btn.active {
+    position: relative;
+    background-color: #007bff;
+    padding: 12px 5px 12px 18px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.left-menu .left-btn.active a {
+    color: #ffffff !important;
+}
+
+.left-menu .left-btn a {
+    color: #000000;
+}
+
+.left-menu .left-btn-sub.active {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px 10px 0px 0px;
+    padding: 12px 5px 12px 18px;
+    margin-bottom: 0px !important;
+}
+
+.left-btn-sub {
+    background-color: #f7f9fa;
+    color: #000000;
+    padding: 12px 5px 4px 18px;
+    margin-bottom: 15px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.left-btn-sub div {
+    padding-bottom: 14px;
+    font-size: 15px;
+}
+
+.left-btn-sub div a {
+    color: #929292;
+}
+
+.left-btn-sub div.active a {
+    color: #007bff;
+}
+
+.top-menu div {
+    position: relative;
+    padding: 13px 3px 13px 3px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: -ms-flexbox !important;
+    -ms-flex-pack: center !important;
+    -ms-flex-align: center !important;
+}
+
+.top-menu div a {
+    color: #929292;
+}
+
+.top-menu div.selected a {
+    color: #000000;
+    font-weight: 500;
+}
+
+.top-menu div span.active {
+    position: absolute;
+    height: 0.26rem;
+    left: 12%;
+    right: 12%;
+    bottom: -0.5px;
+    background-color: #FAA500;
 }
