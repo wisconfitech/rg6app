@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -38,12 +39,12 @@
                                 </div>
                             </div>
                             <!--메인 카테고리-->
-                            <ul class="navbar-nav">
+                            <ul class="navbar-nav common-top">
                                 <li class="nav-item mx-2">
                                     <a class="nav-link" aria-current="page" href="#">Dodo ABC</a>
                                 </li>
                                 <li class="nav-item mx-2">
-                                    <a class="active font-weight-bold nav-link rounded-10 text-primary" aria-current="page" href="#">Library</a>
+                                    <a class="nav-link active" aria-current="page" href="#">Library</a>
                                 </li>
                                 <li class="nav-item mx-2">
                                     <a class="nav-link" aria-current="page" href="#">Calendar</a>
@@ -80,7 +81,7 @@
                                     <div class="px-0">
                                         <div class="mb-3">
                                             <div>
-                                                <div class="bg-pale-grey d-flex justify-content-between p-3 rounded-10">
+                                                <div class="bg-white d-flex justify-content-between p-3 rounded-10">
                                                     <div>
                                                         <div class="mb-2 txt-grey-14">
                                                             오늘 학습 목표 (2020-01-21)
@@ -106,17 +107,17 @@
                                         <div class="mb-3">
                                             <div class="d-flex justify-content-between">
                                                 <div class="dim-per30">
-                                                    <div class="bg-pale-grey mb-2 py-2 rounded-10 text-center">
+                                                    <div class="bg-white mb-2 py-2 rounded-10 text-center">
                                                         <div class="mb-2 txt-grey-14">
                                                             My Points
                                                         </div>
                                                         <div class="mb-2 txt-dark-18">
-                                                            10000.33
+                                                            19999.33
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="dim-per30">
-                                                    <div class="bg-pale-grey mb-2 py-2 rounded-10 text-center">
+                                                    <div class="bg-white mb-2 py-2 rounded-10 text-center">
                                                         <div class="mb-2 txt-grey-14">
                                                             Completed
                                                         </div>
@@ -126,7 +127,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="dim-per30">
-                                                    <div class="bg-pale-grey mb-2 py-2 rounded-10 text-center">
+                                                    <div class="bg-white mb-2 py-2 rounded-10 text-center">
                                                         <div class="mb-2 txt-grey-14">
                                                             My Level
                                                         </div>
@@ -139,22 +140,22 @@
                                         </div>
                                         <hr />
                                         <div>
-                                            <button class="bg-pale-grey btn mb-3 py-2 rounded-10 w-100">
+                                            <button class="bg-white btn mb-3 py-2 rounded-10 w-100">
                                                 My Info
                                             </button>
                                         </div>
                                         <div>
-                                            <button class="bg-pale-grey btn mb-3 py-2 rounded-10 w-100">
+                                            <button class="bg-white btn mb-3 py-2 rounded-10 w-100">
                                                 학습 레벨 설정
                                             </button>
                                         </div>
                                         <div>
-                                            <button class="bg-pale-grey btn mb-3 py-2 rounded-10 w-100">
+                                            <button class="bg-white btn mb-3 py-2 rounded-10 w-100">
                                                 Pre K Workbook MP3
                                             </button>
                                         </div>
                                         <div>
-                                            <button class="btn btn-dark py-2 rounded-10 w-100">
+                                            <button class="btn-dark btn py-2 rounded-10 w-100">
                                                 Log Out
                                             </button>
                                         </div>
@@ -172,20 +173,10 @@
         <div class="container">
             <div class="row">
                 <div class="col px-0">
-                    <div class="d-flex justify-content-around">
-                        <div class="h-100 px-2 py-2">
-                            <a href="#" class="txt-grey-14">Study</a>
-                        </div>
-                        <div class="h-100 px-2 py-2">
-                            <a href="#" class="txt-grey-14">Workbook</a>
-                        </div>
-                        <div class="position-relative">
-                            <div class="h-100 px-2 py-2">
-                                <a href="#" class="font-weight-bold txt-dark-14">Song</a>
-                            </div>
-                            <div class="bg-primary btn-highlight position-absolute">
-                            </div>
-                        </div>
+                    <div class="top-menu d-flex justify-content-around px-0">
+                        <div class="col"><a href="">Study</a></div>
+                        <div class="col"><a href="">WB</a></div>
+                        <div class="col selected"><span class="active"></span><a href="">Song</a></div>
                     </div>
                 </div>
             </div>
@@ -195,50 +186,39 @@
     <div class="container my-lg-3">
         <div class="d-flex">
             <!--좌측-->
-            <div class="box-common-side-menu d-lg-block d-none" data-pg-name="사이드메뉴">
+            <div class="left-menu box-common-side-menu d-lg-block d-none">
                 <div class="px-1 mb-3">
                     <h6>My Study</h6>
                 </div>
-                <div class="position-relative btn-left-button mb-3 p-2 pl-3 rounded-10 txt-dark-14">
+                <div class="left-btn">
                     <div class="position-absolute red-dot"></div>
-                    <img src="../../../assets/image/icon/icons8-bookmark_ribbon.png" alt="" width="12" class="mr-1">
-                    <span>To-Do</span>
+                    <a href="">To-Do</a>
                 </div>
-                <div class="btn-left-button mb-3 p-2 pl-3 rounded-10 txt-dark-14">
-                    <img src="../../../assets/image/icon/icons8-bookmark_ribbon.png" alt="" width="12" class="mr-1">
-                    <span>Favorite</span>
+                <div class="left-btn">
+                    <a href="">Favorite</a>
                 </div>
                 <div class="my-3 px-1">
                     <h6>Book Finder</h6>
                 </div>
-                <div class="border-0 card mb-3 p-0 rounded-10">
-                    <div class="bg-primary p-2 pl-3 rounded-top-10">
-                        <img src="../../../assets/image/icon/icons8-bookmark_ribbon_white.png" alt="" width="12" class="mr-1">
-                        <a href="" class="m-0"><span class="txt-white-14">Pre K</span></a>
-                    </div>
-                    <div class="bg-pale-grey border-bottom-left-menu card-body p-0 pb-2">
-                        <div class="p-2 pl-3 txt-grey-14">Study</div>
-                        <div class="p-2 pl-3 txt-grey-14">Workbook</div>
-                        <div class="font-weight-bold p-2 pl-3 text-dark txt-dark-14">
-                            <span class="text-primary">Song</span>
-                        </div>
-                    </div>
+                <div class="left-btn-sub active">
+                    Pre K
                 </div>
-                <div class="btn-left-button mb-3 p-2 pl-3 rounded-10 txt-dark-14">
-                    <img src="../../../assets/image/icon/icons8-bookmark_ribbon.png" alt="" width="12" class="mr-1">
-                    <span>eBook</span>
+                <div class="left-btn-sub">
+                    <div><a href="">Study</a></div>
+                    <div><a href="">Workbook</a></div>
+                    <div class="active"><a href="">Song</a></div>
                 </div>
-                <div class="btn-left-button mb-3 p-2 pl-3 rounded-10 txt-dark-14">
-                    <img src="../../../assets/image/icon/icons8-bookmark_ribbon.png" alt="" width="12" class="mr-1">
-                    <span>pBook Quiz</span>
+                <div class="left-btn">
+                    <a href="">eBook</a>
                 </div>
-                <div class="btn-left-button mb-3 p-2 pl-3 rounded-10 txt-dark-14">
-                    <img src="../../../assets/image/icon/icons8-bookmark_ribbon.png" alt="" width="12" class="mr-1">
-                    <span>New Books</span>
+                <div class="left-btn">
+                    <a href="">pBook Quiz</a>
                 </div>
-                <div class="btn-left-button mb-3 p-2 pl-3 rounded-10 txt-dark-14">
-                    <img src="../../../assets/image/icon/icons8-bookmark_ribbon.png" alt="" width="12" class="mr-1">
-                    <span>Search</span>
+                <div class="left-btn">
+                    <a href="">New Books</a>
+                </div>
+                <div class="left-btn">
+                    <a href="">Search</a>
                 </div>
             </div>
             <!--우측-->
@@ -281,4 +261,6 @@
     <script src="../../../assets/js/popper.js"></script>
     <script src="../../../bootstrap/js/bootstrap.min.js"></script>
     <script src="../../../assets/js/common.js"></script>
-</body></html>
+</body>
+
+</html>
