@@ -55,6 +55,9 @@
                                 <li class="nav-item mx-2">
                                     <a class="nav-link" aria-current="page" href="#">Challenge</a>
                                 </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" aria-current="page" href="#">My Info</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -132,7 +135,7 @@
                                                             My Level
                                                         </div>
                                                         <div class="mb-2 txt-dark-18">
-                                                            KA
+                                                            <a href="">KA</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -142,11 +145,6 @@
                                         <div>
                                             <button class="bg-white btn mb-3 py-2 rounded-10 w-100">
                                                 My Info
-                                            </button>
-                                        </div>
-                                        <div>
-                                            <button class="bg-white btn mb-3 py-2 rounded-10 w-100">
-                                                학습 레벨 설정
                                             </button>
                                         </div>
                                         <div>
@@ -228,7 +226,7 @@
                     <div class="col-12">
                         <!--목표달성:이달의 일일목표 달성일수-->
                         <a href="" class="text-dark w-100" data-toggle="modal" data-target="#calInfo">
-                            <div class="align-items-center bg-light d-flex justify-content-center mx-0 px-3 py-2 rounded-10 mb-3">
+                            <div class="align-items-center bg-white d-flex justify-content-center mx-0 px-3 py-2 rounded-10 mb-3">
                                 <span class="mr-2">이달의 학습 목표 달성: 0일</span>
                                 <img src="../../../assets/image/icon/sort_down.png" alt="" srcset="../../../assets/image/icon/sort_down@2x.png 2x, ../../../assets/image/icon/sort_down@3x.png 3x" width="10" height="5">
                             </div>
@@ -265,7 +263,8 @@
                 </div>
                 <!-- 달력: 날짜 -->
                 <div class="row px-md-3">
-                    <table class="table table-sm text-center">
+                    <div class="d-none d-md-block p-2 bg-white rounded-top-10 w-100"></div>
+                    <table class="table table-sm text-center mb-md-0">
                         <thead>
                             <tr>
                                 <th scope="col" class="text-danger">S</th>
@@ -524,6 +523,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="d-none d-md-block p-2 bg-white rounded-bottom-10 w-100 mb-3"></div>
                 </div>
                 <!--모달-->
                 <div class="modal fade" id="calInfo" tabindex="-1" aria-labelledby="calInfo" aria-hidden="true">

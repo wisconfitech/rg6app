@@ -39,12 +39,12 @@
                                 </div>
                             </div>
                             <!--메인 카테고리-->
-                            <ul class="navbar-nav">
+                            <ul class="navbar-nav common-top">
                                 <li class="nav-item mx-2">
                                     <a class="nav-link" aria-current="page" href="#">Dodo ABC</a>
                                 </li>
                                 <li class="nav-item mx-2">
-                                    <a class="active font-weight-bold nav-link rounded-10 text-primary" aria-current="page" href="#">Library</a>
+                                    <a class="nav-link active" aria-current="page" href="#">Library</a>
                                 </li>
                                 <li class="nav-item mx-2">
                                     <a class="nav-link" aria-current="page" href="#">Calendar</a>
@@ -54,6 +54,9 @@
                                 </li>
                                 <li class="nav-item mx-2">
                                     <a class="nav-link" aria-current="page" href="#">Challenge</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" aria-current="page" href="#">My Info</a>
                                 </li>
                             </ul>
                         </div>
@@ -132,7 +135,7 @@
                                                             My Level
                                                         </div>
                                                         <div class="mb-2 txt-dark-18">
-                                                            KA
+                                                            <a href="">KA</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -142,11 +145,6 @@
                                         <div>
                                             <button class="bg-white btn mb-3 py-2 rounded-10 w-100">
                                                 My Info
-                                            </button>
-                                        </div>
-                                        <div>
-                                            <button class="bg-white btn mb-3 py-2 rounded-10 w-100">
-                                                학습 레벨 설정
                                             </button>
                                         </div>
                                         <div>
@@ -238,7 +236,7 @@
                     <!--도서-->
                     <div class="col-6 col-sm-4 col-lg-3 mb-3">
                         <div class="position-relative">
-                            <div class="book-checkbox d-none position-absolute">
+                            <div class="book-checkbox position-absolute">
                                 <div class="d-block">
                                     <input type="checkbox" id="check2" />
                                     <label for="check2"></label>
@@ -262,7 +260,7 @@
                     <!--도서-->
                     <div class="col-6 col-sm-4 col-lg-3 mb-3">
                         <div class="position-relative">
-                            <div class="book-checkbox d-none position-absolute">
+                            <div class="book-checkbox position-absolute">
                                 <div class="d-block">
                                     <input type="checkbox" id="check3" />
                                     <label for="check3"></label>
@@ -286,7 +284,7 @@
                     <!--도서-->
                     <div class="col-6 col-sm-4 col-lg-3 mb-3">
                         <div class="position-relative">
-                            <div class="book-checkbox d-none position-absolute">
+                            <div class="book-checkbox position-absolute">
                                 <div class="d-block">
                                     <input type="checkbox" id="check4" />
                                     <label for="check4"></label>
@@ -310,7 +308,7 @@
                     <!--도서-->
                     <div class="col-6 col-sm-4 col-lg-3 mb-3">
                         <div class="position-relative">
-                            <div class="book-checkbox d-none position-absolute">
+                            <div class="book-checkbox position-absolute">
                                 <div class="d-block">
                                     <input type="checkbox" id="check5" />
                                     <label for="check5"></label>
@@ -354,26 +352,44 @@
         </div>
     </div>
     <!--하단(페이지네이션)-->
-    <div class="bg-white border-top fixed-bottom">
-        <!--일괄작업:선택권수-->
-        <div class="d-none">
-            <div class="bg-selected py-1 text-center txt-white-16">Selected: 10</div>
-        </div>
+    <div class="page-nav bg-bottom fixed-bottom">
         <div class="container my-2">
-            <div class="align-items-center d-flex justify-content-end">
-                <button type="button" class="border btn btn-light ml-2 px-3 rounded-10">
-                    <img src="../../../assets/image/icon/back_in_btn.png" srcset="../../../assets/image/icon/back_in_btn@2x.png 2x, ../../../assets/image/icon/back_in_btn@3x.png 3x" alt="" width="6" height="12" />
+            <div class="align-items-center d-flex justify-content-between justify-content-md-end">
+                <button type="button" class="border btn btn-light px-3 rounded-10">
+                    <img src="../../../assets/image/icon/back_in_btn.png"
+                        srcset="../../../assets/image/icon/back_in_btn@2x.png 2x, ../../../assets/image/icon/back_in_btn@3x.png 3x"
+                        alt="" width="6" height="12" />
                 </button>
-                <input type="text" class="form-control ml-2 rounded-10 text-center page-input-box">
-                <span class="ml-2">/ 20</span>
+                <div class="d-flex align-items-center">
+                    <input type="text" class="form-control ml-2 rounded-10 text-center page-input-box">
+                    <span class="ml-2">/ 20</span>
+                </div>
                 <button type="button" class="border btn btn-light ml-2 px-3 rounded-10">
-                    <img src="../../../assets/image/icon/next_in_btn.png" srcset="../../../assets/image/icon/next_in_btn@2x.png 2x, ../../../assets/image/icon/next_in_btn@3x.png 3x" alt="" width="6" height="12" />
+                    <img src="../../../assets/image/icon/next_in_btn.png"
+                        srcset="../../../assets/image/icon/next_in_btn@2x.png 2x, ../../../assets/image/icon/next_in_btn@3x.png 3x"
+                        alt="" width="6" height="12" />
                 </button>
-                <button type="button" class="border btn btn-light ml-2 rounded-10">Batch</button>
-                <!--일괄작업:삭제,내보내기-->
-                <div class="d-none">
-                    <button type="button" class="border btn btn-light btn-outline-danger ml-2 rounded-10">Delete</button>
-                    <button type="button" class="border btn btn-light btn-outline-primary ml-2 rounded-10">Export</button>
+
+            </div>
+        </div>
+        <!--일괄작업: 도서에 체크박스를 체크하면 활성화-->
+        <div class="fixed-bottom d-none">
+            <div class="bg-selected p-2 px-3 text-center txt-white-16">
+                <div class="container">
+                    <!-- 일괄작업: 선택후 작업 -->
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center align-items-center">
+                            <div class="mr-2">Selected: 10</div>
+                            <div class="selected dropdown">
+                                <button type="button" class="btn" id="export" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Export</button>
+                                <div class="dropdown-menu rounded-10 mb-2" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Vocabulary</a>
+                                    <a class="dropdown-item" href="#">Excel List</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
