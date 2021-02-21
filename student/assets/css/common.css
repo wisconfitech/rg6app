@@ -8,8 +8,16 @@
     --brick-orange: #cd3d0f;
 }
 
+body {
+    background-color: #f7f9fa;
+}
+
 a {
     text-decoration: none !important;
+}
+
+a div.book-point+img {
+    border: 1px solid #f0f2f5;
 }
 
 select {
@@ -79,7 +87,7 @@ input[type="checkbox"] {
     display: none;
 }
 
-input[type="checkbox"] + label {
+input[type="checkbox"]+label {
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -90,7 +98,7 @@ input[type="checkbox"] + label {
     background-size: cover;
 }
 
-input[type="checkbox"]:checked + label {
+input[type="checkbox"]:checked+label {
     background: url(../image/icon/checkbox.svg) -29px top no-repeat;
     background-size: cover;
 }
@@ -138,7 +146,7 @@ input[type="checkbox"]:checked + label {
 }
 
 .bg-pale-grey {
-    background-color: #f7f9fa;
+    background-color: #f0f2f5;
 }
 
 .bg-tomato {
@@ -307,27 +315,48 @@ input[type="checkbox"]:checked + label {
 
 /* 레벨선택 -> */
 .btn-level {
-    padding: 10px 10px 10px 20px;
+    padding: 5px 5px 5px 20px;
     border-radius: 100px;
     color: #ffffff;
     font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: -ms-flexbox !important;
+    -ms-flex-pack: center !important;
+    -ms-flex-align: center !important;
 }
 
 @media only screen and (max-width: 375px) {
     .btn-level {
-        padding: 10px 10px 10px 15px;
+        padding: 5px 5px 5px 15px;
         border-radius: 100px;
         color: #ffffff;
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        display: -ms-flexbox !important;
+        -ms-flex-pack: center !important;
+        -ms-flex-align: center !important;
     }
 }
 
 @media only screen and (max-width: 320px) {
     .btn-level {
-        padding: 10px 10px 10px 10px;
+        padding: 5px 5px 5px 12px;
         border-radius: 100px;
         color: #ffffff;
-        font-size: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        display: -ms-flexbox !important;
+        -ms-flex-pack: center !important;
+        -ms-flex-align: center !important;
     }
 }
 
@@ -335,13 +364,15 @@ input[type="checkbox"]:checked + label {
     width: 30px;
     height: 30px;
     border-radius: 100px;
-    background-color: #2371e3;
-    font-size: 14px;
-    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 12px;
+    color: #fff;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     display: -ms-flexbox !important;
+    -ms-flex-pack: center !important;
+    -ms-flex-align: center !important;
 }
 
 .btn-level .book-count-black {
@@ -349,13 +380,20 @@ input[type="checkbox"]:checked + label {
     height: 30px;
     padding: 6px 6px;
     border-radius: 100px;
-    background-color: #000000;
-    font-size: 14px;
-    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 12px;
+    color: #fff;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     display: -ms-flexbox !important;
+    -ms-flex-pack: center !important;
+    -ms-flex-align: center !important;
+
+}
+
+.bg-level-pk {
+    background-color: #2ECC49;
 }
 
 .bg-level-ka {
@@ -535,7 +573,7 @@ input[type="checkbox"]:checked + label {
 }
 
 .book-checkbox {
-    right: 0.1rem;
+    right: -0.23rem;
     top: 0.6rem;
 }
 
@@ -563,7 +601,7 @@ input[type="checkbox"]:checked + label {
 }
 
 .bg-selected {
-    background-color: #E13939;
+    background-color: #CD3D0F;
 }
 
 .btn-rg-red {
@@ -625,7 +663,7 @@ input[type="checkbox"]:checked + label {
         background-color: #f2f7ff;
     }
 
-    .date tr td div + div {
+    .date tr td div+div {
         min-height: 50px;
         display: flex;
         align-items: center;
@@ -656,7 +694,7 @@ input[type="checkbox"]:checked + label {
         background-color: #f2f7ff;
     }
 
-    .date tr td div + div {
+    .date tr td div+div {
         min-height: 90px;
         display: flex;
         align-items: center;
@@ -721,13 +759,13 @@ input[type="checkbox"]:checked + label {
 
 @media (max-width:375px) {
 
-    .date tr td div + div.level-up {
+    .date tr td div+div.level-up {
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 30px;
     }
 
-    .date tr td div + div.attendance {
+    .date tr td div+div.attendance {
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 44px;
@@ -736,13 +774,13 @@ input[type="checkbox"]:checked + label {
 
 @media (min-width:376px) {
 
-    .date tr td div + div.level-up {
+    .date tr td div+div.level-up {
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 40px;
     }
 
-    .date tr td div + div.attendance {
+    .date tr td div+div.attendance {
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 55px;
@@ -751,113 +789,113 @@ input[type="checkbox"]:checked + label {
 
 /*레벨마스터 배지*/
 
-.date tr td div + div.level-up.master-ka {
+.date tr td div+div.level-up.master-ka {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_ka.png');
 }
 
-.date tr td div + div.level-up.master-kb {
+.date tr td div+div.level-up.master-kb {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_kb.png');
 }
 
-.date tr td div + div.level-up.master-kc {
+.date tr td div+div.level-up.master-kc {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_kc.png');
 }
 
-.date tr td div + div.level-up.master-1a {
+.date tr td div+div.level-up.master-1a {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_1a.png');
 }
 
-.date tr td div + div.level-up.master-1b {
+.date tr td div+div.level-up.master-1b {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_1b.png');
 }
 
-.date tr td div + div.level-up.master-1c {
+.date tr td div+div.level-up.master-1c {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_1c.png');
 }
 
-.date tr td div + div.level-up.master-2a {
+.date tr td div+div.level-up.master-2a {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_2a.png');
 }
 
-.date tr td div + div.level-up.master-2b {
+.date tr td div+div.level-up.master-2b {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_2b.png');
 }
 
-.date tr td div + div.level-up.master-2c {
+.date tr td div+div.level-up.master-2c {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_2c.png');
 }
 
-.date tr td div + div.level-up.master-3a {
+.date tr td div+div.level-up.master-3a {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_3a.png');
 }
 
-.date tr td div + div.level-up.master-3b {
+.date tr td div+div.level-up.master-3b {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_3b.png');
 }
 
-.date tr td div + div.level-up.master-3c {
+.date tr td div+div.level-up.master-3c {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_3c.png');
 }
 
-.date tr td div + div.level-up.master-4a {
+.date tr td div+div.level-up.master-4a {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_4a.png');
 }
 
-.date tr td div + div.level-up.master-4b {
+.date tr td div+div.level-up.master-4b {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_4b.png');
 }
 
-.date tr td div + div.level-up.master-4c {
+.date tr td div+div.level-up.master-4c {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_4c.png');
 }
 
-.date tr td div + div.level-up.master-5a {
+.date tr td div+div.level-up.master-5a {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_5a.png');
 }
 
-.date tr td div + div.level-up.master-5b {
+.date tr td div+div.level-up.master-5b {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_5b.png');
 }
 
-.date tr td div + div.level-up.master-5c {
+.date tr td div+div.level-up.master-5c {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_5c.png');
 }
 
-.date tr td div + div.level-up.master-6a {
+.date tr td div+div.level-up.master-6a {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_6a.png');
 }
 
-.date tr td div + div.level-up.master-6b {
+.date tr td div+div.level-up.master-6b {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_6b.png');
 }
 
-.date tr td div + div.level-up.master-6c {
+.date tr td div+div.level-up.master-6c {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_6c.png');
 }
 
 /*출석도장*/
 
-.date tr td div + div.attendance.dodo {
+.date tr td div+div.attendance.dodo {
     background-image: url('https://wcfresource.a1edu.com/NewSystem/image/Character/MainCharacter/Attend/img_dodo.png');
 }
 
-.date tr td div + div.attendance.koon {
+.date tr td div+div.attendance.koon {
     background-image: url('https://wcfresource.a1edu.com/NewSystem/image/Character/MainCharacter/Attend/img_koon.png');
 }
 
-.date tr td div + div.attendance.pang {
+.date tr td div+div.attendance.pang {
     background-image: url('https://wcfresource.a1edu.com/NewSystem/image/Character/MainCharacter/Attend/img_pang.png');
 }
 
-.date tr td div + div.attendance.juju {
+.date tr td div+div.attendance.juju {
     background-image: url('https://wcfresource.a1edu.com/NewSystem/image/Character/MainCharacter/Attend/img_juju.png');
 }
 
-.date tr td div + div.attendance.momo {
+.date tr td div+div.attendance.momo {
     background-image: url('https://wcfresource.a1edu.com/NewSystem/image/Character/MainCharacter/Attend/img_momo.png');
 }
 
-.date tr td div + div.attendance.bori {
+.date tr td div+div.attendance.bori {
     background-image: url('https://wcfresource.a1edu.com/NewSystem/image/Character/MainCharacter/Attend/img_bori.png');
 }
 
@@ -868,18 +906,18 @@ input[type="checkbox"]:checked + label {
         border-radius: 999px;
         background-color: #e13939;
         color: #ffffff;
-        padding: 5px 12px;
-        margin-right: 6px;
-        font-size: 14px;
+        padding: 5px 8px;
+        margin-right: 4px;
+        font-size: 13px;
     }
 
     .book-info .title {
-        font-size: 16px;
+        font-size: 15px;
         color: #4a4a4a;
     }
 
     .book-info .author {
-        font-size: 14px;
+        font-size: 13px;
         color: #d2d2d2;
     }
 }
@@ -889,18 +927,18 @@ input[type="checkbox"]:checked + label {
         border-radius: 999px;
         background-color: #e13939;
         color: #ffffff;
-        padding: 5px 20px;
+        padding: 5px 10px;
         margin-right: 5px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .book-info .title {
-        font-size: 20px;
+        font-size: 18px;
         color: #4a4a4a;
     }
 
     .book-info .author {
-        font-size: 16px;
+        font-size: 14px;
         color: #d2d2d2;
     }
 }
@@ -911,7 +949,7 @@ input[type="checkbox"]:checked + label {
         border-radius: 999px;
         background-color: #e13939;
         color: #ffffff;
-        padding: 5px 20px;
+        padding: 5px 14px;
         margin-right: 5px;
         font-size: 16px;
     }
@@ -927,25 +965,135 @@ input[type="checkbox"]:checked + label {
     }
 }
 
+.btn.btn-dark {
+    background-color: #5F6B74 !important;
+    color: #fff;
+}
+
+.btn.review {
+    background-color: #5F6B74 !important;
+    margin-bottom: 5px;
+}
+
+.btn.report {
+    background-color: #2ECC49 !important;
+    margin-bottom: 5px;
+}
+
+.add-group {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.add-group a {
+    padding-bottom: 4px;
+}
+
+.assessment.pass-mark.pass {
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgb(48, 167, 240, 0.9);
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.assessment.pass-mark.fail {
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgb(151, 151, 151, 0.9);
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
 .book-info .start .btn:hover {
     background-color: darkred;
 }
 
-.resources .btn {}
+.resources div .btn {
+    padding: 4px 8px 4px 8px;
+    border-radius: 999px;
+    border: solid 1px #404040;
+    margin: 12px 0px 12px 5px;
+    font-size: 13px;
+    background-color: #ffffff;
+}
 
+.book-info-meta .test-result div {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.book-info-meta .test-result div:nth-child(odd) {
+    color: #979797;
+}
+
+@media (max-width:320px) {
+    .resources div .btn {
+        padding: 4px 8px 4px 8px;
+        border-radius: 999px;
+        border: solid 1px #404040;
+        margin: 0px 0px 12px 5px;
+        font-size: 13px;
+        background-color: #ffffff;
+    }
+
+    .resources div {
+        padding: 12px 8px 0px 8px;
+    }
+}
+
+.resources .btn:hover {
+    background-color: #F5F7F9;
+}
+
+.book-info-meta .meta {
+    margin-bottom: 15px;
+    font-size: 14px;
+    ;
+}
+
+.book-info-meta .meta div {
+    color: #979797;
+}
+
+.book-info-meta .meta div+div {
+    color: #000000;
+}
+
+.step-result div div {
+    text-align: center;
+}
+
+.step-result div div div div {
+    font-size: 13px;
+    color: #979797;
+}
+
+.step-result div div div div+div {
+    font-size: 20px;
+    color: #000;
+}
 
 /*공통상단*/
 
-.common-top .active {
+.navbar-nav.common-top .active {
     font-weight: bold;
-    color: #007bff !important;
 }
 
 /*좌측*/
 
 .left-menu .left-btn {
     position: relative;
-    background-color: #f7f9fa;
+    background-color: #ffffff;
     color: #000000;
     padding: 12px 5px 12px 18px;
     margin-bottom: 15px;
@@ -979,7 +1127,7 @@ input[type="checkbox"]:checked + label {
 }
 
 .left-btn-sub {
-    background-color: #f7f9fa;
+    background-color: #fff;
     color: #000000;
     padding: 12px 5px 4px 18px;
     margin-bottom: 15px;
@@ -1027,4 +1175,327 @@ input[type="checkbox"]:checked + label {
     right: 12%;
     bottom: -0.5px;
     background-color: #FAA500;
+}
+
+.my-1.pl-1 .txt-grey-14 {
+    font-size: 13px !important;
+}
+
+.dropdown-menu.sort {
+    margin-top: 10px;
+}
+
+.filter div {
+    margin-bottom: 3px;
+    font-size: 15px;
+}
+
+.filter div label {
+    margin-left: 10px;
+}
+
+/* 페이지네이션 */
+
+.page-nav button img {
+    margin-bottom: 3px;
+}
+
+.fixed-bottom .selected {
+    margin: 3px;
+}
+
+.fixed-bottom .selected button {
+    margin-left: 5px;
+    font-size: 13px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #4b4b4b;
+    font-weight: 500;
+}
+
+.bg-bottom {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* 리포트 */
+
+.ico-search {
+    width: 24px;
+    height: 24px;
+    padding: 4px 4px 5px 4px;
+    border-radius: 999px;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: -ms-flexbox !important;
+    -ms-flex-pack: center !important;
+    -ms-flex-align: center !important;
+}
+
+.period {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #404040;
+}
+
+.period-score div div {
+    color: #979797;
+    font-size: 16px;
+}
+
+.period-score div div+div {
+    color: #404040;
+    font-weight: 600;
+}
+
+.book-list div div:nth-child(odd) div {
+    background-color: #17448a;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 25px 10px 20px;
+    border-radius: 10px 3px 3px 10px;
+    background-image: url('../image/icon/book_style.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 90 80%;
+}
+
+.book-list div div div {
+    background-color: #30a7f0;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 25px 10px 20px;
+    border-radius: 10px 3px 3px 10px;
+    background-image: url('../image/icon/book_style.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 4px 80%;
+}
+
+.book-list div div {
+    padding-bottom: 10px;
+}
+
+.bookbook.border {
+    border: 2px solid #f0f2f5 !important;
+}
+
+/* Assessment 카드 아이템 */
+
+.assessment-card {
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.assessment-card .list-number {
+    margin-bottom: 10px;
+}
+
+.assessment-card .list-number span {
+    border-radius: 10px 0px 10px 0px;
+}
+
+.assessment-card .title {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.assessment-card .book-code {
+    font-size: 14px;
+    color: #979797;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.assessment-card .study-result {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.assessment-card .study-result div {
+    margin-right: 5px;
+    display: inline;
+}
+
+.assessment-short-info .book-checkbox {
+    right: -4px;
+    top: 5px;
+}
+
+.badge {
+    border-radius: 999px;
+    color: #fff
+}
+
+.badge-passed {
+    padding: 2px 10px;
+    background-color: #30a7f0;
+}
+
+.badge-passed-score {
+    padding: 2px 10px;
+    background-color: #2ECC49;
+}
+
+.badge-mode {
+    padding: 2px 10px;
+    background-color: #FC2B2D;
+}
+
+.badge-point {
+    padding: 2px 10px;
+    background-color: #faa500;
+}
+
+.badge-date {
+    padding: 2px 10px;
+    background-color: #404040;
+}
+
+.badge-fail {
+    padding: 2px 10px;
+    background-color: #979797;
+}
+
+.badge-fail-score {
+    padding: 2px 10px;
+    background-color: #979797;
+}
+
+.badge-on-revision {
+    padding: 2px 10px;
+    background-color: #fa6400;
+}
+
+.badge-re-writing {
+    padding: 2px 10px;
+    background-color: #e13939;
+}
+
+.badge-revision-score {
+    padding: 2px 10px;
+    background-color: #10ab00;
+}
+
+/* 캐릭터 애니메이션 */
+
+.character-ani img {
+    width: 100%;
+}
+
+.character-growth {
+    margin-bottom: 20px;
+}
+
+.character-growth .btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background-color: #F9A16C;
+    color: #fff;
+}
+
+.character-growth .btn.active {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background-color: #fa6400;
+    color: #fff;
+}
+
+.character-growth .btn.lock {
+    background-color: #f0f2f5 !important;
+}
+
+.character-dream {
+    padding: 0px 10px 0px 10px;
+}
+
+.character-dream .title {
+    color: #404040;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.character-dream .contents {
+    color: #404040;
+    font-size: 15px;
+}
+
+/* 레벨업 챠트 */
+
+.level-up-chart .col-12.d-flex {
+    margin-bottom: 20px;
+    background-color: #fff; 
+    border-radius: 10px;
+}
+
+.level-up-chart .level {
+    border-radius: 999px;
+    width: 70px;
+    height: 70px;
+    margin: 10px 0px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: -ms-flexbox !important;
+    -ms-flex-pack: center !important;
+    -ms-flex-align: center !important;
+}
+
+.level-up-chart .level.bg-level-pk {
+    font-size: 18px !important;
+}
+
+.level-up.status {
+    margin-left: 15px;
+    padding-top: 15px
+}
+
+.progress {
+    border-radius: 999px;
+}
+
+.progress .progress-bar {
+    border-radius: 999px;
+}
+
+.level-up.points {
+    font-size: 15px;
+    color: #979797;
+    padding: 5px;
+}
+
+.level-up.points div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: -ms-flexbox !important;
+    -ms-flex-align: center !important;
+}
+
+.level-up.points span+span {
+    color: #000000;
+}
+
+.assessment-list div div div+div .list-number .bg-dark {
+    background-color: #30a7f0 !important;
+}
+
+.assessment-list div:nth-child(odd) div div+div .list-number .bg-dark {
+    background-color: #17448a !important;
 }

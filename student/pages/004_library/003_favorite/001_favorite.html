@@ -39,12 +39,12 @@
                                 </div>
                             </div>
                             <!--메인 카테고리-->
-                            <ul class="navbar-nav">
+                            <ul class="navbar-nav common-top">
                                 <li class="nav-item mx-2">
                                     <a class="nav-link" aria-current="page" href="#">Dodo ABC</a>
                                 </li>
                                 <li class="nav-item mx-2">
-                                    <a class="active font-weight-bold nav-link rounded-10 text-primary" aria-current="page" href="#">Library</a>
+                                    <a class="nav-link active" aria-current="page" href="#">Library</a>
                                 </li>
                                 <li class="nav-item mx-2">
                                     <a class="nav-link" aria-current="page" href="#">Calendar</a>
@@ -54,6 +54,9 @@
                                 </li>
                                 <li class="nav-item mx-2">
                                     <a class="nav-link" aria-current="page" href="#">Challenge</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" aria-current="page" href="#">My Info</a>
                                 </li>
                             </ul>
                         </div>
@@ -132,7 +135,7 @@
                                                             My Level
                                                         </div>
                                                         <div class="mb-2 txt-dark-18">
-                                                            KA
+                                                            <a href="">KA</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -142,11 +145,6 @@
                                         <div>
                                             <button class="bg-white btn mb-3 py-2 rounded-10 w-100">
                                                 My Info
-                                            </button>
-                                        </div>
-                                        <div>
-                                            <button class="bg-white btn mb-3 py-2 rounded-10 w-100">
-                                                학습 레벨 설정
                                             </button>
                                         </div>
                                         <div>
@@ -172,41 +170,34 @@
     <div class="container my-lg-3">
         <div class="d-flex">
             <!--좌측-->
-            <div class="box-common-side-menu d-lg-block d-none">
+            <div class="left-menu box-common-side-menu d-lg-block d-none">
                 <div class="px-1 mb-3">
                     <h6>My Study</h6>
                 </div>
-                <div class="position-relative btn-left-button mb-3 p-2 pl-3 rounded-10 txt-dark-14">
+                <div class="left-btn">
                     <div class="position-absolute red-dot"></div>
-                    <img src="../../../assets/image/icon/icons8-bookmark_ribbon.png" alt="" width="12" class="mr-1">
-                    <span>To-Do</span>
+                    <a href="">To-Do</a>
                 </div>
-                <div class="bg-primary btn-left-button mb-3 p-2 pl-3 rounded-10">
-                    <img src="../../../assets/image/icon/icons8-bookmark_ribbon_white.png" alt="" width="12" class="mr-1">
-                    <span class="txt-white-14">Favorite</span>
+                <div class="left-btn active">
+                    <a href="">Favorite</a>
                 </div>
                 <div class="my-3 px-1">
                     <h6>Book Finder</h6>
                 </div>
-                <div class="btn-left-button mb-3 p-2 pl-3 rounded-10 txt-dark-14">
-                    <img src="../../../assets/image/icon/icons8-bookmark_ribbon.png" alt="" width="12" class="mr-1">
-                    <span>Pre K</span>
+                <div class="left-btn">
+                    <a href="">Pre K</a>
                 </div>
-                <div class="btn-left-button mb-3 p-2 pl-3 rounded-10 txt-dark-14">
-                    <img src="../../../assets/image/icon/icons8-bookmark_ribbon.png" alt="" width="12" class="mr-1">
-                    <span>eBook</span>
+                <div class="left-btn">
+                    <a href="">eBook</a>
                 </div>
-                <div class="btn-left-button mb-3 p-2 pl-3 rounded-10 txt-dark-14">
-                    <img src="../../../assets/image/icon/icons8-bookmark_ribbon.png" alt="" width="12" class="mr-1">
-                    <span>pBook Quiz</span>
+                <div class="left-btn">
+                    <a href="">pBook Quiz</a>
                 </div>
-                <div class="btn-left-button mb-3 p-2 pl-3 rounded-10 txt-dark-14">
-                    <img src="../../../assets/image/icon/icons8-bookmark_ribbon.png" alt="" width="12" class="mr-1">
-                    <span>New Books</span>
+                <div class="left-btn">
+                    <a href="">New Books</a>
                 </div>
-                <div class="btn-left-button mb-3 p-2 pl-3 rounded-10 txt-dark-14">
-                    <img src="../../../assets/image/icon/icons8-bookmark_ribbon.png" alt="" width="12" class="mr-1">
-                    <span>Search</span>
+                <div class="left-btn">
+                    <a href="">Search</a>
                 </div>
             </div>
             <!--우측-->
@@ -226,9 +217,50 @@
                 <div class="row mb-2">
                     <div class="col-12">
                         <div class="d-flex justify-content-between py-2">
-                            <a href=""><span class="txt-dark-14 mr-2">Filter</span><img src="../../../assets/image/icon/sort_down.png" alt="" srcset="../../../assets/image/icon/sort_down@2x.png 2x, ../../../assets/image/icon/sort_down@3x.png 3x" width="10" height="5"></a>
-                            <span class="txt-dark-14">20 Books</span>
-                            <!--1권 이하일 경우 단위는 Book이라고 표시-->
+                            <a href="" data-toggle="modal" data-target="#filter"><span class="txt-dark-14 mr-2">Filter /
+                                    All</span><img src="../../../assets/image/icon/sort_down.png" alt=""
+                                    srcset="../../../assets/image/icon/sort_down@2x.png 2x, ../../../assets/image/icon/sort_down@3x.png 3x"
+                                    width="10" height="5"></a>
+                            <span class="txt-dark-14">20 Books</span><!--!1권 이하일 경우 단위는 Book이라고 표시-->
+                        </div>
+                    </div>
+                </div>
+                <!-- 필터정보 -->
+                <div class="modal fade" id="filter" tabindex="-1" aria-labelledby="bookInfo" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content modal-bg">
+                            <div class="d-flex justify-content-between">
+                                <span class="modal-title px-2">Filter</span>
+                                <a href="#" class="p-2" data-dismiss="modal" aria-label="Close"><img
+                                        src="../../../assets/image/icon/delete.png"
+                                        srcset="../../../assets/image/icon/delete@2x.png 2x, ../../../assets/image/icon/delete@3x.png 3x"
+                                        alt=""></a>
+                            </div>
+                            <!--필터 내용-->
+                            <div class="modal-body px-2 pt-0 filter">
+                                <div class="font-weight-bold"><img src="../../../assets/image/icon/mini_right_arrow.png"
+                                        alt=""
+                                        srcset="../../../assets/image/icon/mini_right_arrow@2x.png 2x, ../../../assets/image/icon/mini_right_arrow@3x.png 3x"
+                                        class="mr-2">Status</div>
+                                <div class="form-check bg-pale-grey py-2 rounded-10 mb-2">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="study" checked>All Books
+                                    </label>
+                                </div>
+                                <div class="form-check bg-pale-grey py-2 rounded-10 mb-2">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="study">미완료 학습
+                                    </label>
+                                </div>
+                                <div class="form-check bg-pale-grey py-2 rounded-10 mb-2">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="study">완료된 학습
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="modal-footer px-1 pb-0 border-top-0">
+                                <button class="btn btn-primary w-100 rounded-10">Save</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -237,7 +269,7 @@
                     <!--도서:In Progrss-->
                     <div class="col-6 col-sm-4 col-lg-3 mb-3">
                         <div class="position-relative">
-                            <div class="book-checkbox d-none position-absolute">
+                            <div class="book-checkbox position-absolute">
                                 <div class="d-block">
                                     <input type="checkbox" id="check2" />
                                     <label for="check2"></label>
@@ -264,7 +296,7 @@
                     <!--도서:In Completed 1-->
                     <div class="col-6 col-sm-4 col-lg-3 mb-3">
                         <div class="position-relative">
-                            <div class="book-checkbox d-none position-absolute">
+                            <div class="book-checkbox position-absolute">
                                 <div class="d-block">
                                     <input type="checkbox" id="check3" />
                                     <label for="check3"></label>
@@ -291,7 +323,7 @@
                     <!--도서:In Completed All-->
                     <div class="col-6 col-sm-4 col-lg-3 mb-3">
                         <div class="position-relative">
-                            <div class="book-checkbox d-none position-absolute">
+                            <div class="book-checkbox position-absolute">
                                 <div class="d-block">
                                     <input type="checkbox" id="check4" />
                                     <label for="check4"></label>
@@ -318,7 +350,7 @@
                     <!--도서-->
                     <div class="col-6 col-sm-4 col-lg-3 mb-3">
                         <div class="position-relative">
-                            <div class="book-checkbox d-none position-absolute">
+                            <div class="book-checkbox position-absolute">
                                 <div class="d-block">
                                     <input type="checkbox" id="check5" />
                                     <label for="check5"></label>
@@ -362,26 +394,51 @@
         </div>
     </div>
     <!--하단(페이지네이션)-->
-    <div class="bg-white border-top fixed-bottom">
-        <!--일괄작업:선택권수-->
-        <div class="d-none">
-            <div class="bg-selected py-1 text-center txt-white-16">Selected: 10</div>
-        </div>
+    <div class="page-nav bg-bottom fixed-bottom">
         <div class="container my-2">
-            <div class="align-items-center d-flex justify-content-end">
-                <button type="button" class="border btn btn-light ml-2 px-3 rounded-10">
-                    <img src="../../../assets/image/icon/back_in_btn.png" srcset="../../../assets/image/icon/back_in_btn@2x.png 2x, ../../../assets/image/icon/back_in_btn@3x.png 3x" alt="" width="6" height="12" />
+            <div class="align-items-center d-flex justify-content-between justify-content-md-end">
+                <button type="button" class="border btn btn-light px-3 rounded-10">
+                    <img src="../../../assets/image/icon/back_in_btn.png"
+                        srcset="../../../assets/image/icon/back_in_btn@2x.png 2x, ../../../assets/image/icon/back_in_btn@3x.png 3x"
+                        alt="" width="6" height="12" />
                 </button>
-                <input type="text" class="form-control ml-2 rounded-10 text-center page-input-box">
-                <span class="ml-2">/ 20</span>
+                <div class="d-flex align-items-center">
+                    <input type="text" class="form-control ml-2 rounded-10 text-center page-input-box">
+                    <span class="ml-2">/ 20</span>
+                </div>
                 <button type="button" class="border btn btn-light ml-2 px-3 rounded-10">
-                    <img src="../../../assets/image/icon/next_in_btn.png" srcset="../../../assets/image/icon/next_in_btn@2x.png 2x, ../../../assets/image/icon/next_in_btn@3x.png 3x" alt="" width="6" height="12" />
+                    <img src="../../../assets/image/icon/next_in_btn.png"
+                        srcset="../../../assets/image/icon/next_in_btn@2x.png 2x, ../../../assets/image/icon/next_in_btn@3x.png 3x"
+                        alt="" width="6" height="12" />
                 </button>
-                <button type="button" class="border btn btn-light ml-2 rounded-10">Batch</button>
-                <!--일괄작업:삭제,내보내기-->
-                <div class="d-none">
-                    <button type="button" class="border btn btn-light btn-outline-danger ml-2 rounded-10">Delete</button>
-                    <button type="button" class="border btn btn-light btn-outline-primary ml-2 rounded-10">Export</button>
+
+            </div>
+        </div>
+        <!--일괄작업: 도서에 체크박스를 체크하면 활성화-->
+        <div class="fixed-bottom d-none">
+            <div class="bg-selected p-2 px-3 text-center txt-white-16">
+                <div class="container">
+                    <!-- 일괄작업: 선택후 작업 -->
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center align-items-center">
+                            <div class="mr-2">Selected: 10</div>
+                            <div class="selected dropdown">
+                                <button type="button" class="btn text-danger" id="delete" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Delete</button>
+                                <div class="dropdown-menu rounded-10 mb-2" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item text-danger" href="#">선택한 도서 삭제</a>
+                                </div>
+                            </div>
+                            <div class="selected dropdown">
+                                <button type="button" class="btn" id="export" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Export</button>
+                                <div class="dropdown-menu rounded-10 mb-2" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Vocabulary</a>
+                                    <a class="dropdown-item" href="#">Excel List</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
