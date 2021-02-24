@@ -32,14 +32,14 @@ select::-ms-expand {
     display: none;
 }
 
-.sidenav {
+.bg-light.sidenav {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #f0f2f5;
+    background-color: #fff !important;
     overflow-x: hidden;
     transition: 0.1s;
     padding-top: 60px;
@@ -389,7 +389,6 @@ input[type="checkbox"]:checked+label {
     display: -ms-flexbox !important;
     -ms-flex-pack: center !important;
     -ms-flex-align: center !important;
-
 }
 
 .bg-level-pk {
@@ -510,6 +509,8 @@ input[type="checkbox"]:checked+label {
 
 .page-input-box {
     width: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .top-logo {
@@ -724,8 +725,7 @@ input[type="checkbox"]:checked+label {
     color: #ffffff;
 }
 
-/*모달: 이달의 성과*/
-
+/* 모달: 이달의 성과 */
 .col-12.medal {
     display: flex;
     align-items: center;
@@ -755,10 +755,8 @@ input[type="checkbox"]:checked+label {
     margin-bottom: 8px !important;
 }
 
-/*출석*/
-
+/* 출석 */
 @media (max-width:375px) {
-
     .date tr td div+div.level-up {
         background-position: center center;
         background-repeat: no-repeat;
@@ -773,7 +771,6 @@ input[type="checkbox"]:checked+label {
 }
 
 @media (min-width:376px) {
-
     .date tr td div+div.level-up {
         background-position: center center;
         background-repeat: no-repeat;
@@ -787,8 +784,7 @@ input[type="checkbox"]:checked+label {
     }
 }
 
-/*레벨마스터 배지*/
-
+/* 레벨마스터 배지 */
 .date tr td div+div.level-up.master-ka {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_ka.png');
 }
@@ -873,8 +869,7 @@ input[type="checkbox"]:checked+label {
     background-image: url('https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_6c.png');
 }
 
-/*출석도장*/
-
+/* 출석도장 */
 .date tr td div+div.attendance.dodo {
     background-image: url('https://wcfresource.a1edu.com/NewSystem/image/Character/MainCharacter/Attend/img_dodo.png');
 }
@@ -899,8 +894,7 @@ input[type="checkbox"]:checked+label {
     background-image: url('https://wcfresource.a1edu.com/NewSystem/image/Character/MainCharacter/Attend/img_bori.png');
 }
 
-/*도서정보*/
-
+/* 도서정보 */
 @media screen and (max-width: 350px) {
     .book-info .start .btn {
         border-radius: 999px;
@@ -942,7 +936,6 @@ input[type="checkbox"]:checked+label {
         color: #d2d2d2;
     }
 }
-
 
 @media screen and (min-width:376px) {
     .book-info .start .btn {
@@ -1058,7 +1051,6 @@ input[type="checkbox"]:checked+label {
 .book-info-meta .meta {
     margin-bottom: 15px;
     font-size: 14px;
-    ;
 }
 
 .book-info-meta .meta div {
@@ -1083,14 +1075,12 @@ input[type="checkbox"]:checked+label {
     color: #000;
 }
 
-/*공통상단*/
-
+/* 공통상단 */
 .navbar-nav.common-top .active {
     font-weight: bold;
 }
 
-/*좌측*/
-
+/* 좌측 */
 .left-menu .left-btn {
     position: relative;
     background-color: #ffffff;
@@ -1195,7 +1185,6 @@ input[type="checkbox"]:checked+label {
 }
 
 /* 페이지네이션 */
-
 .page-nav button img {
     margin-bottom: 3px;
 }
@@ -1218,7 +1207,6 @@ input[type="checkbox"]:checked+label {
 }
 
 /* 리포트 */
-
 .ico-search {
     width: 24px;
     height: 24px;
@@ -1288,7 +1276,6 @@ input[type="checkbox"]:checked+label {
 }
 
 /* Assessment 카드 아이템 */
-
 .assessment-card {
     background-color: #fff;
     border-radius: 10px;
@@ -1334,7 +1321,7 @@ input[type="checkbox"]:checked+label {
 
 .badge {
     border-radius: 999px;
-    color: #fff
+    color: #fff;
 }
 
 .badge-passed {
@@ -1388,7 +1375,6 @@ input[type="checkbox"]:checked+label {
 }
 
 /* 캐릭터 애니메이션 */
-
 .character-ani img {
     width: 100%;
 }
@@ -1434,10 +1420,9 @@ input[type="checkbox"]:checked+label {
 }
 
 /* 레벨업 챠트 */
-
 .level-up-chart .col-12.d-flex {
     margin-bottom: 20px;
-    background-color: #fff; 
+    background-color: #fff;
     border-radius: 10px;
 }
 
@@ -1463,7 +1448,7 @@ input[type="checkbox"]:checked+label {
 
 .level-up.status {
     margin-left: 15px;
-    padding-top: 15px
+    padding-top: 15px;
 }
 
 .progress {
@@ -1498,4 +1483,220 @@ input[type="checkbox"]:checked+label {
 
 .assessment-list div:nth-child(odd) div div+div .list-number .bg-dark {
     background-color: #17448a !important;
+}
+
+/* 영어독서왕 */
+.kor-info {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.kor-info-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #404040;
+    margin-bottom: 20px;
+}
+
+.kor-info-title+.no-pass {
+    margin-top: -15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #e13939;
+}
+
+.date .kor-active {
+    background-color: #fa6400 !important;
+    color: #ffffff;
+}
+
+.kor-label {
+    font-size: 14px;
+    color: #979797;
+    margin-bottom: 5px;
+}
+
+.kor-contents {
+    font-size: 14px;
+    color: #404040;
+    margin-bottom: 5px;
+}
+
+.dropdown-menu.dropdown-menu-right {
+    background-color: #f7f9fa;
+    border-radius: 10px;
+}
+
+/* 도도 프렌즈 */
+.friends-card {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.friends-card .btn {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f2f5;
+    color: #ffffff;
+    border-radius: 999px;
+}
+
+.friends-card .btn.active {
+    background-color: #fa6400 !important;
+}
+
+.friends-card .btn.lock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: -ms-flexbox !important;
+    -ms-flex-pack: center !important;
+    -ms-flex-align: center !important;
+}
+
+.friends-card .contents {
+    font-size: 14px;
+    text-align: center;
+    color: #404040;
+    margin-bottom: 15px;
+}
+
+.friends-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #404040;
+}
+
+.friends-point {
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #979797;
+}
+
+.master-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #404040;
+}
+
+/* 마이인포 */
+.my-info .my-info-menu div a div {
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.select-dem {
+    background-image: url('../image/icon/mini-arrow-down.png');
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+}
+
+.btn.btn-primary.basic {
+    padding: 10px;
+}
+
+.level-tour-card {
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: #f0f2f5;
+}
+
+.tour-comment {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f0f2f5;
+    margin-bottom: 15px;
+}
+
+.goal-set-card {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f0f2f5;
+}
+
+.goal-history th,
+td {
+    width: 33.33%;
+    background-color: #fff;
+}
+
+.goal-history th {
+    background-color: #f0f2f5 !important;
+    padding: 5px;
+}
+
+.btn-spinner {
+    width: 38px;
+    height: 38px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #404040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: -ms-flexbox !important;
+    -ms-flex-pack: center !important;
+    -ms-flex-align: center !important;
+}
+
+.goal-set-card .save {
+    height: 38px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+    background-color: #2371e3;
+    color: #fff;
+}
+
+@media (max-width:320px) {
+    .goal-set-card .font-point {
+        font-size: 12px;
+    }
+}
+
+.kor-contents.goal {
+    cursor: pointer;
+}
+
+.custom-control-label {
+    width: 0px !important;
+}
+
+.account .account-card {
+    padding: 20px 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: -ms-flexbox !important;
+    -ms-flex-pack: center !important;
+    -ms-flex-align: center !important;
+}
+
+.account .account-card span {
+    color: #000;
+    font-size: 14px;
+}
+
+.account .account-card span:nth-child(1) {
+    color: #979797;
+}
+
+.account .account-avata {
+    padding: 20px 15px;
+    border-radius: 10px;
+
+    /* background-color: #fff */
+    margin-bottom: 15px;
 }
