@@ -1089,6 +1089,7 @@ input[type="checkbox"]:checked+label {
     margin-bottom: 15px;
     border-radius: 10px;
     font-size: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
 }
 
 .left-menu .left-btn.active {
@@ -1719,4 +1720,47 @@ td {
 
 .deactive .deactive-card span:nth-child(1) {
     color: #979797;
+}
+
+.box.congratulation {
+    border: 0px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 30px 20px 30px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box.congratulation img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.box.stand-by {
+    border: 0px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 30px 20px 30px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box.stand-by img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.box.no-list {
+    border: 0px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 100px 20px 100px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-link.passowrd-hide {
+    right: 14px;
+    top: 10.5px;
+    botoom: 10.5px;
 }
