@@ -31,7 +31,7 @@
         </div>
     </div>
     <!-- 뒤로 가기 -->
-    <div class="bg-white py-3">
+    <div class="py-3">
         <div class="container">
             <div class="row">
                 <div class="col col-md-10 col-lg-6 mx-auto">
@@ -110,14 +110,16 @@
                         <input type="tel" id="inputEnd" class="dim-per32 form-control rounded-10 dim-input">
                     </div>
                     <div class="mb-3">
-                        <div class="mb-3">
-                            <input type="checkbox" checked/>
-                            <span class="txt-dark-16">학습 리포트 및 정보 수신 동의</span>
+                        <input type="checkbox" id="check1" checked />
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input m-0" id="formCustomCheckbox44" checked>
+                            <label class="custom-control-label m-0" for="formCustomCheckbox44"></label>
+                            <span>학습 리포트 및 정보 수신 동의</span>
                         </div>
-                        <div class="mb-3">
-                            <span class="txt-dark-14">
-                                (주간/월간 학습 리포트, 학습 만료일 알림, 레벨업 축하 메세지, 주요 이벤트 및 공지사항 등) </span>
-                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <span class="txt-dark-14">
+                            (주간/월간 학습 리포트, 학습 만료일 알림, 레벨업 축하 메세지, 주요 이벤트 및 공지사항 등) </span>
                     </div>
                 </div>
                 <!-- 인증하기 -->
@@ -126,7 +128,7 @@
                         <button type="button" class="btn btn-rg-blue btn-mp-s w-100 rounded-10">인증하기</button>
                     </div>
                     <div class="pt-2">
-                        <div class="mb-3 text-center">
+                        <div class="mb-5 text-center">
                             <a href="">다음에 입력하기</a>
                         </div>
                     </div>

@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>Reading Gate - My Info</title>
+	<title>Reading Gate - Report</title>
 	<link href="../../../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="../../../assets/css/font.css" rel="stylesheet" type="text/css">
 	<link href="../../../assets/css/common.css" rel="stylesheet" type="text/css">
@@ -53,14 +53,14 @@
 								<li class="nav-item mx-2">
 									<a class="nav-link" aria-current="page" href="#">Calendar</a>
 								</li>
-								<li class="nav-item mx-2">
+								<li class="nav-item mx-2 active">
 									<a class="nav-link" aria-current="page" href="#">Report</a>
 								</li>
 								<li class="nav-item mx-2">
 									<a class="nav-link" aria-current="page" href="#">Challenge</a>
 								</li>
 								<li class="nav-item mx-2">
-									<a class="nav-link active" aria-current="page" href="#">My Info</a>
+									<a class="nav-link" aria-current="page" href="#">My Info</a>
 								</li>
 							</ul>
 						</div>
@@ -70,7 +70,7 @@
 						<a class="btn mr-1"> <img src="../../../assets/image/icon/back_icon.png"
 								srcset="../../../assets/image/icon/back_icon@2x.png 2x, ../../../assets/image/icon/back_icon@3x.png.png 3x"
 								alt="" class="mb-1" width="10" height="16" /> </a>
-						<span>화면 설정</span>
+						<span>Report</span>
 					</div>
 					<!--주요 학습정보-->
 					<div class="d-flex mr-3 px-0 text-right">
@@ -88,6 +88,7 @@
 										alt="" width="30" height="30" class="mr-2" /> <span
 										class="font-weight-bold  txt-dark-16">KA</span> </a>
 							</div>
+							<div></div>
 							<div class="dropdown-menu common-top dropdown-menu-right mt-1 py-3 rounded-10"
 								aria-labelledby="rightMenuButton">
 								<div class="px-3">
@@ -180,7 +181,25 @@
 			</nav>
 		</div>
 	</div>
-	<!--Study Profile-->
+	<!--Report 메뉴-->
+	<div class="w-100 border-bottom d-block d-lg-none bg-white">
+		<div class="container">
+			<div class="row">
+				<div class="col px-0">
+					<div class="top-menu d-flex justify-content-around px-0">
+						<div class="col selected">
+							<span class="active"></span>
+							<a href="">Book Report</a>
+						</div>
+						<div class="col">
+							<a href="">Progress Levels</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--book report-->
 	<div class="container my-lg-3">
 		<div class="d-flex">
 			<!--좌측-->
@@ -188,23 +207,11 @@
 				<div class="px-1 mb-3">
 					<h6>Category</h6>
 				</div>
-				<div class="left-btn">
-					<a href="">학습 프로필</a>
-				</div>
-				<div class="left-btn">
-					<a href="">레벨 테스트</a>
-				</div>
 				<div class="left-btn active">
-					<a href="">화면 설정</a>
+					<a href="">Book Report</a>
 				</div>
 				<div class="left-btn">
-					<a href="">회원 정보</a>
-				</div>
-				<div class="left-btn">
-					<a href="">학습 일시중지</a>
-				</div>
-				<div class="left-btn">
-					<a href="">결제 이력</a>
+					<a href="">Progress Levels</a>
 				</div>
 			</div>
 			<!--우측-->
@@ -216,82 +223,146 @@
 							<img src="../../../assets/image/icon/dot_icon.png" alt=""
 								srcset="../../../assets/image/icon/dot_icon@2x.png 2x, ../../../assets/image/icon/dot_icon@3x.png 3x"
 								width="8" height="8" class="mr-2" />
-							<span class="mr-2 txt-grey-16">My Info</span>
+							<span class="mr-2 txt-grey-16">Report</span>
 							<img src="../../../assets/image/icon/mini_right_arrow.png" alt=""
 								srcset="../../../assets/image/icon/mini_right_arrow@2x.png 2x, ../../../assets/image/icon/mini_right_arrow@3x.png 3x"
 								class="mr-2" />
-							<span class="txt-dark-16">Screen Setting</span>
+							<span class="txt-dark-16">Book Report</span>
 						</div>
 					</div>
 				</div>
+				<!-- 기간조회 -->
 				<div class="row mt-3 mb-3">
+					<div class="col-12">
+						<!--기간조회:기간표시-->
+						<a href="" id="dropdownMenuButton2" class="text-dark w-100" data-toggle="modal"
+							data-target="#periodSearch">
+							<div
+								class="btn-lib-level py-2 pl-3 pr-2 mx-0 d-flex justify-content-between align-items-center">
+								<span class="d-flex align-items-center period"> <span class="mr-2">2021-01-01</span>
+									<span> <img src="../../../assets/image/icon/mini_right_arrow.png" alt=""
+											srcset="../../../assets/image/icon/mini_right_arrow@2x.png 2x, ../../../assets/image/icon/mini_right_arrow@3x.png 3x"
+											class="mr-2" /> </span> <span
+										class="txt-dark-16 font-weight-bold mr-2">2021-01-30</span> </span>
+								<a href="">
+									<div class="ico-search">
+										<img src="../../../assets/image/icon/search_filled.png" alt=""
+											srcset="../../../assets/image/icon/search_filled@2x.png 2x, ../../../assets/image/icon/search_filled@3x.png 3x">
+									</div>
+								</a>
+							</div>
+						</a>
+					</div>
+					<!--기간조회:팝업-->
+					<div class="modal fade" id="periodSearch" tabindex="-1" aria-labelledby="periodSearch"
+						aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content modal-bg">
+								<div class="d-flex justify-content-between mb-3">
+									<span class="modal-title px-2">Period Search </span>
+									<a href="#" class="p-2" data-dismiss="modal" aria-label="Close"><img
+											src="../../../assets/image/icon/delete.png"
+											srcset="../../../assets/image/icon/delete@2x.png 2x, ../../../assets/image/icon/delete@3x.png 3x"
+											alt=""></a>
+								</div>
+								<div class="container d-flex mb-3">
+									<div class="form-group pl-2 mb-0">
+										<input class="form-check-input" type="radio" name="inlineRadioOptions"
+											id="formInput16" value="option1" checked>
+										<label class="form-check-label" for="formInput16">직접입력</label>
+									</div>
+									<div class="form-group pl-5 mb-0">
+										<input class="form-check-input" type="radio" name="inlineRadioOptions"
+											id="formInput17" value="option2">
+										<label class="form-check-label" for="formInput16">월별조회</label>
+									</div>
+								</div>
+								<div class="container px-0">
+									<div class="row">
+										<div class="col-12 mb-3">
+											<label class="pl-1">Start</label>
+											<div class="form-group mb-2">
+												<input type="date" id="inputStart"
+													class="form-control rounded-10 dim-input">
+											</div>
+											<label class="pl-1">End</label>
+											<div class="form-group mb-2">
+												<input type="date" id="inputEnd"
+													class="form-control rounded-10 dim-input">
+											</div>
+											<label class="pl-1">도서 또는 시리즈명 (옵션)</label>
+											<div class="form-group mb-0">
+												<input type="text" id="inputText"
+													class="form-control rounded-10 dim-input">
+											</div>
+										</div>
+										<div class="col-12 mb-3 ">
+											<button type="button"
+												class="btn btn-rg-blue btn-mp-s w-100 rounded-10">Search</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
 					<div class="col">
-						<span class="txt-dark-18 font-weight-bold">
-							시작 화면</span>
+						<div class="p-2 bg-pale-grey rounded-10 d-flex">
+							<div class="w-50 pr-1">
+								<button type="button"
+									class="btn btn-rg-red rounded-10 txt-white-14 w-100">Performance</button>
+							</div>
+							<div class="w-50 pl-1">
+								<button type="button" class="btn btn-rg-white w-100 rounded-10 txt-grey-14">
+									Assessment
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row my-1 px-2">
+					<div class="col-12">
+						<div class="d-flex justify-content-between py-2">
+							<a href="" data-toggle="dropdown"><span class="txt-dark-14 mr-2">Status / All</span><img
+									src="../../../assets/image/icon/sort_down.png" alt=""
+									srcset="../../../assets/image/icon/sort_down@2x.png 2x, ../../../assets/image/icon/sort_down@3x.png 3x"
+									width="10" height="5"></a>
+							<div class="dropdown-menu rounded-10 mb-2" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">All</a>
+								<a class="dropdown-item" href="#">Passed</a>
+								<a class="dropdown-item" href="#">Failed</a>
+								<hr class="my-2">
+								<a class="dropdown-item" href="#">Writing</a>
+							</div>
+							<span class="txt-dark-14">0 Book</span>
+							<!--1권 이하일 경우 단위는 Book이라고 표시-->
+						</div>
 					</div>
 				</div>
 				<div class="row mb-3">
+					<div
+						class="col mx-3 bg-white text-center d-flex justify-content-around rounded-10 py-2 period-score">
+						<div>
+							<div>Reads</div>
+							<div>0</div>
+						</div>
+						<div>
+							<div>Passed</div>
+							<div>0</div>
+						</div>
+						<div>
+							<div>Points</div>
+							<div>0</div>
+						</div>
+					</div>
+				</div>
+				<!-- 빈 화면: 검색한 도서가 없는 경우 -->
+				<div class="row">
 					<div class="col-12">
-						<div class="form">
-							<div class="bg-pale-grey form-check mb-2 py-2 rounded-10">
-								<label class="form-check-label d-flex align-items-center">
-									<input type="radio" class="mr-3" name="intro" checked>Home
-								</label>
-							</div>
-							<div class="bg-pale-grey form-check mb-2 py-2 rounded-10">
-								<label class="form-check-label d-flex align-items-center">
-									<input type="radio" class="mr-3" name="intro">To-Do / Assignment
-								</label>
-							</div>
+						<div class="box no-list">
+							<span>검색 결과가 없습니다.</span>
 						</div>
-					</div>
-				</div>
-				<div class="row mt-3 mb-3">
-					<div class="col">
-						<span class="txt-dark-18 font-weight-bold">
-							학습 화면</span>
-					</div>
-				</div>
-				<div class="row mt-3 mb-2">
-					<div class="col-12">
-						<div class="bg-pale-grey form-check mb-2 py-2 rounded-10">
-							<input type="checkbox" id="check1" checked />
-							<div class="custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input m-0" id="formCustomCheckbox44"
-									checked>
-								<label class="custom-control-label m-0" for="formCustomCheckbox44"></label>
-								<span>Step2(Vocabulary) Hint / Skip</span>
-							</div>
-						</div>
-						<div class="bg-pale-grey form-check mb-2 py-2 rounded-10">
-							<input type="checkbox" id="check2" checked />
-							<div class="custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input m-0" id="formCustomCheckbox45"
-									checked>
-								<label class="custom-control-label m-0" for="formCustomCheckbox45"></label>
-								<span>Step3(Summary) Hint 보기</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row mt-3 mb-3">
-					<div class="col">
-						<span class="txt-dark-18 font-weight-bold">
-							시스템 언어</span>
-					</div>
-				</div>
-				<div class="row mb-5">
-					<div class="col-12 col-lg-3 mb-3">
-						<div class="form-group mb-0">
-							<select id="studyLevel" class="form-control rounded-10 select-dem txt-dark-14">
-								<option>한국어</option>
-								<option>English</option>
-								<option>Tiếng Việt</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-12 col-lg-2 mb-3">
-						<button type="button" class="btn btn-rg-blue p-2 w-100 rounded-10">Save</button>
 					</div>
 				</div>
 			</div>

@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>Reading Gate - My Info</title>
+	<title>Reading Gate - Challenge</title>
 	<link href="../../../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="../../../assets/css/font.css" rel="stylesheet" type="text/css">
 	<link href="../../../assets/css/common.css" rel="stylesheet" type="text/css">
@@ -56,11 +56,11 @@
 								<li class="nav-item mx-2">
 									<a class="nav-link" aria-current="page" href="#">Report</a>
 								</li>
-								<li class="nav-item mx-2">
+								<li class="active mx-2 nav-item">
 									<a class="nav-link" aria-current="page" href="#">Challenge</a>
 								</li>
 								<li class="nav-item mx-2">
-									<a class="nav-link active" aria-current="page" href="#">My Info</a>
+									<a class="nav-link" aria-current="page" href="#">My Info</a>
 								</li>
 							</ul>
 						</div>
@@ -70,7 +70,7 @@
 						<a class="btn mr-1"> <img src="../../../assets/image/icon/back_icon.png"
 								srcset="../../../assets/image/icon/back_icon@2x.png 2x, ../../../assets/image/icon/back_icon@3x.png.png 3x"
 								alt="" class="mb-1" width="10" height="16" /> </a>
-						<span>화면 설정</span>
+						<span>Challenge</span>
 					</div>
 					<!--주요 학습정보-->
 					<div class="d-flex mr-3 px-0 text-right">
@@ -180,7 +180,30 @@
 			</nav>
 		</div>
 	</div>
-	<!--Study Profile-->
+	<!--Report 메뉴-->
+	<div class="w-100 border-bottom d-block d-lg-none bg-white">
+		<div class="container">
+			<div class="row">
+				<div class="col px-0">
+					<div class="top-menu d-flex justify-content-around px-0">
+						<div class="col">
+							<a href="">도전 영어독서왕</a>
+						</div>
+						<div class="col">
+							<a href="">Dodo Friends</a>
+						</div>
+						<div class="col selected">
+							<span class="active"></span>
+							<a href="">Level Master</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 디자인 베너 -->
+	<div class="text-center"></div>
+	<!--레벨 마스터-->
 	<div class="container my-lg-3">
 		<div class="d-flex">
 			<!--좌측-->
@@ -189,22 +212,13 @@
 					<h6>Category</h6>
 				</div>
 				<div class="left-btn">
-					<a href="">학습 프로필</a>
+					<a href="">도전 영어독서왕</a>
 				</div>
 				<div class="left-btn">
-					<a href="">레벨 테스트</a>
+					<a href="">Dodo Friends</a>
 				</div>
 				<div class="left-btn active">
-					<a href="">화면 설정</a>
-				</div>
-				<div class="left-btn">
-					<a href="">회원 정보</a>
-				</div>
-				<div class="left-btn">
-					<a href="">학습 일시중지</a>
-				</div>
-				<div class="left-btn">
-					<a href="">결제 이력</a>
+					<a href="">Level Master</a>
 				</div>
 			</div>
 			<!--우측-->
@@ -216,88 +230,196 @@
 							<img src="../../../assets/image/icon/dot_icon.png" alt=""
 								srcset="../../../assets/image/icon/dot_icon@2x.png 2x, ../../../assets/image/icon/dot_icon@3x.png 3x"
 								width="8" height="8" class="mr-2" />
-							<span class="mr-2 txt-grey-16">My Info</span>
+							<span class="mr-2 txt-grey-16">Challenge</span>
 							<img src="../../../assets/image/icon/mini_right_arrow.png" alt=""
 								srcset="../../../assets/image/icon/mini_right_arrow@2x.png 2x, ../../../assets/image/icon/mini_right_arrow@3x.png 3x"
 								class="mr-2" />
-							<span class="txt-dark-16">Screen Setting</span>
+							<span class="txt-dark-16">Level Master</span>
 						</div>
 					</div>
 				</div>
-				<div class="row mt-3 mb-3">
-					<div class="col">
-						<span class="txt-dark-18 font-weight-bold">
-							시작 화면</span>
-					</div>
-				</div>
-				<div class="row mb-3">
-					<div class="col-12">
-						<div class="form">
-							<div class="bg-pale-grey form-check mb-2 py-2 rounded-10">
-								<label class="form-check-label d-flex align-items-center">
-									<input type="radio" class="mr-3" name="intro" checked>Home
-								</label>
+				<!-- 레벨 마스터 -->
+				<div class="row justify-content-center pt-2">
+					<div class="col-12 col-md-6 mb-3">
+						<div class="bg-white rounded-10 p-3">
+							<div class="text-center p-3 mb-3 rounded-10 bg-pale-grey">
+								<img src="../../../assets/image/gif/dodo_noon_ggambak.gif"
+									width="150" />
 							</div>
-							<div class="bg-pale-grey form-check mb-2 py-2 rounded-10">
-								<label class="form-check-label d-flex align-items-center">
-									<input type="radio" class="mr-3" name="intro">To-Do / Assignment
-								</label>
+							<div class="px-1">
+								<div class="mb-2 txt-grey-14 text-center">
+									지금 바로 레벨업에 도전하세요!
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row mt-3 mb-3">
-					<div class="col">
-						<span class="txt-dark-18 font-weight-bold">
-							학습 화면</span>
+				<!-- 레벨업 기준표 실행 -->
+				<div class="py-2 row">
+					<div class="col text-center">
+						<button type="button" class="border btn btn-light p-2 px-3 rounded-100 txt-dark-14"
+							data-toggle="modal" data-target="#levelUpGuide">Level Up Guide</button>
 					</div>
 				</div>
-				<div class="row mt-3 mb-2">
-					<div class="col-12">
-						<div class="bg-pale-grey form-check mb-2 py-2 rounded-10">
-							<input type="checkbox" id="check1" checked />
-							<div class="custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input m-0" id="formCustomCheckbox44"
-									checked>
-								<label class="custom-control-label m-0" for="formCustomCheckbox44"></label>
-								<span>Step2(Vocabulary) Hint / Skip</span>
+				<!-- 레벨업 기준표 팝업 -->
+				<div class="modal fade" id="levelUpGuide" tabindex="-1" aria-labelledby="character" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+						<div class="modal-content modal-bg">
+							<div class="d-flex justify-content-between">
+								<span class="modal-title px-2">Level Up Guide</span>
+								<a href="#" class="p-2" data-dismiss="modal" aria-label="Close"><img
+										src="../../../assets/image/icon/delete.png"
+										srcset="../../../assets/image/icon/delete@2x.png 2x, ../../../assets/image/icon/delete@3x.png 3x"
+										alt=""></a>
+							</div>
+							<!--레벨업 기준표 팝업: 내용-->
+							<div class="modal-body p-2">
+								<p>각 레벨의 레벨업 포인트를 달성하면 나의 학습 레벨이 레벨업 됩니다.</p>
+								<div class="row text-center txt-grey-12">
+									<div class="col-4">Level</div>
+									<div class="col-4">Level Up Points</div>
+									<div class="col-4">Level Up</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">Pre K</div>
+									<div class="col-4">100</div>
+									<div class="col-4">KA</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">KA</div>
+									<div class="col-4">100</div>
+									<div class="col-4">KB</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">KB</div>
+									<div class="col-4">200</div>
+									<div class="col-4">KC</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">KC</div>
+									<div class="col-4">450</div>
+									<div class="col-4">1A</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">1A</div>
+									<div class="col-4">600</div>
+									<div class="col-4">1B</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">1B</div>
+									<div class="col-4">800</div>
+									<div class="col-4">1C</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">1C</div>
+									<div class="col-4">1000</div>
+									<div class="col-4">2A</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">2A</div>
+									<div class="col-4">1200</div>
+									<div class="col-4">2B</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">2B</div>
+									<div class="col-4">1300</div>
+									<div class="col-4">2C</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">2C</div>
+									<div class="col-4">1400</div>
+									<div class="col-4">3A</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">3A</div>
+									<div class="col-4">1600</div>
+									<div class="col-4">3B</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">3B</div>
+									<div class="col-4">1700</div>
+									<div class="col-4">3C</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">3C</div>
+									<div class="col-4">1800</div>
+									<div class="col-4">4A</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">4A</div>
+									<div class="col-4">1000</div>
+									<div class="col-4">4B</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">4B</div>
+									<div class="col-4">1000</div>
+									<div class="col-4">4C</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">4C</div>
+									<div class="col-4">1000</div>
+									<div class="col-4">5A</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">5A</div>
+									<div class="col-4">800</div>
+									<div class="col-4">5B</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">5B</div>
+									<div class="col-4">700</div>
+									<div class="col-4">5C</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">5C</div>
+									<div class="col-4">700</div>
+									<div class="col-4">6A</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">6A</div>
+									<div class="col-4">700</div>
+									<div class="col-4">6B</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">6B</div>
+									<div class="col-4">600</div>
+									<div class="col-4">6C</div>
+								</div>
+								<hr class="my-2">
+								<div class="row text-center">
+									<div class="col-4">6C</div>
+									<div class="col-4">0</div>
+									<div class="col-4"></div>
+								</div>
 							</div>
 						</div>
-						<div class="bg-pale-grey form-check mb-2 py-2 rounded-10">
-							<input type="checkbox" id="check2" checked />
-							<div class="custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input m-0" id="formCustomCheckbox45"
-									checked>
-								<label class="custom-control-label m-0" for="formCustomCheckbox45"></label>
-								<span>Step3(Summary) Hint 보기</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row mt-3 mb-3">
-					<div class="col">
-						<span class="txt-dark-18 font-weight-bold">
-							시스템 언어</span>
-					</div>
-				</div>
-				<div class="row mb-5">
-					<div class="col-12 col-lg-3 mb-3">
-						<div class="form-group mb-0">
-							<select id="studyLevel" class="form-control rounded-10 select-dem txt-dark-14">
-								<option>한국어</option>
-								<option>English</option>
-								<option>Tiếng Việt</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-12 col-lg-2 mb-3">
-						<button type="button" class="btn btn-rg-blue p-2 w-100 rounded-10">Save</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="space-bottom"></div>
+	<div class=" space-bottom"></div>
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->

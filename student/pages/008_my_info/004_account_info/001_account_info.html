@@ -233,26 +233,187 @@
 				<div class="row mb-3">
 					<div class="col-12">
 						<div class="account">
+							<!-- 사용자 아바타 -->
 							<div class="account-avata text-center">
 								<div>
 									<img src="https://www.readinggate.com/Content/assets/homepage/img/avatar/avatar01@2x.png"
 										alt="" width="120" />
 								</div>
 								<div class="mt-2">
-									<a href="">Edit</a>
+									<a href="" data-toggle="modal" data-target="#editAvatar">Edit</a>
 								</div>
 							</div>
+							<!-- 사용자 아바타 변경 팝업 -->
+							<div class="modal fade" id="editAvatar" tabindex="-1" aria-labelledby="editName"
+								aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered">
+									<div class="modal-content modal-bg">
+										<div class="d-flex justify-content-between mb-3">
+											<span class="modal-title px-1">My Avatar</span>
+											<a href="#" class="p-2" data-dismiss="modal" aria-label="Close"><img
+													src="../../../assets/image/icon/delete.png"
+													srcset="../../../assets/image/icon/delete@2x.png 2x, ../../../assets/image/icon/delete@3x.png 3x"
+													alt=""></a>
+										</div>
+										<div class="container px-0">
+											<div class="row">
+												<div class="col-6 mb-3">
+													<div class="bg-pale-grey rounded-10">
+														<div class="my-avatar dodo">
+															<div class="p-2 pl-3">
+																<input type="radio" name="choose" value="dodo" checked>
+																<label for="dodo">Dodo</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-6 mb-3">
+													<div class="bg-pale-grey rounded-10">
+														<div class="my-avatar koon">
+															<div class="p-2 pl-3">
+																<input type="radio" name="choose" value="koon">
+																<label for="koon">Koon</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-6 mb-3">
+													<div class="bg-pale-grey rounded-10">
+														<div class="my-avatar pang">
+															<div class="p-2 pl-3">
+																<input type="radio" name="choose" value="pang">
+																<label for="pang">Pang</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-6 mb-3">
+													<div class="bg-pale-grey rounded-10">
+														<div class="my-avatar juju">
+															<div class="p-2 pl-3">
+																<input type="radio" name="choose" value="juju">
+																<label for="juju">Juju</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-6 mb-3">
+													<div class="bg-pale-grey rounded-10">
+														<div class="my-avatar momo">
+															<div class="p-2 pl-3">
+																<input type="radio" name="choose" value="momo">
+																<label for="momo">Momo</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-6 mb-3">
+													<div class="bg-pale-grey rounded-10">
+														<div class="my-avatar bori">
+															<div class="p-2 pl-3">
+																<input type="radio" name="choose" value="bori">
+																<label for="bori">Bori</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 mb-3">
+													<button type="button"
+														class="btn btn-rg-blue btn-mp-s w-100 rounded-10">Change</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 사용자 이름 -->
 							<div class="account-card">
 								<span>User Name</span>
-								<span>김혜수<span class="ml-2"><a href="">Edit</a></span></span>
+								<span>김혜수<span class="ml-2"><a href="#" data-toggle="modal"
+											data-target="#editName">Edit</a></span></span>
 							</div>
+							<!-- 사용자 이름 변경 팝업 -->
+							<div class="modal fade" id="editName" tabindex="-1" aria-labelledby="editName"
+								aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered">
+									<div class="modal-content modal-bg">
+										<div class="d-flex justify-content-between mb-3">
+											<span class="modal-title px-1">Edit User Name</span>
+											<a href="#" class="p-2" data-dismiss="modal" aria-label="Close"><img
+													src="../../../assets/image/icon/delete.png"
+													srcset="../../../assets/image/icon/delete@2x.png 2x, ../../../assets/image/icon/delete@3x.png 3x"
+													alt=""></a>
+										</div>
+										<div class="container px-0">
+											<div class="row">
+												<div class="col-12 mb-3">
+													<span class="px-1">이름:</span><span>김혜수</span>
+												</div>
+												<div class="col-12 mb-3">
+													<label class="pl-1">변경할 이름</label>
+													<div class="form-group mb-0">
+														<input type="text" id="inputText"
+															class="form-control rounded-10 dim-input">
+													</div>
+												</div>
+												<div class="col-12 mb-3 ">
+													<button type="button"
+														class="btn btn-rg-blue btn-mp-s w-100 rounded-10">Save</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 사용자 아이디 -->
 							<div class="account-card">
 								<span>Log in ID</span>
 								<span>hy2510@naver.com</span>
 							</div>
+							<!-- 사용자 비밀번호 변경 -->
 							<div class="account-card">
 								<span>Password</span>
-								<span><a href="">Change</a></span>
+								<span><a href="" data-toggle="modal" data-target="#editPassword">Change</a></span>
+							</div>
+							<!-- 사용자 비밀번호 변경 팝업 -->
+							<div class="modal fade" id="editPassword" tabindex="-1" aria-labelledby="periodSearch"
+								aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered">
+									<div class="modal-content modal-bg">
+										<div class="d-flex justify-content-between mb-3">
+											<span class="modal-title px-1">Change Password</span>
+											<a href="#" class="p-2" data-dismiss="modal" aria-label="Close"><img
+													src="../../../assets/image/icon/delete.png"
+													srcset="../../../assets/image/icon/delete@2x.png 2x, ../../../assets/image/icon/delete@3x.png 3x"
+													alt=""></a>
+										</div>
+										<div class="container px-0">
+											<div class="row">
+												<div class="col-12 mb-3">
+													<label class="pl-1">기존 비밀번호</label>
+													<div class="form-group mb-0">
+														<input type="text" id="inputText"
+															class="form-control rounded-10 dim-input">
+													</div>
+												</div>
+												<div class="col-12 mb-3">
+													<label class="pl-1">변경할 비밀번호</label>
+													<div class="form-group mb-0 position-relative">
+														<a href="#"
+															class="btn-link position-absolute passowrd-hide">Hide</a>
+														<input type="text" id="inputText"
+															class="form-control rounded-10 dim-input"
+															placeholder="영문, 숫자 조합 6자리 이상 입력">
+													</div>
+												</div>
+												<div class="col-12 mb-3 ">
+													<button type="button"
+														class="btn btn-rg-blue btn-mp-s w-100 rounded-10">Save</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="account-card">
 								<span>E-Mail</span>

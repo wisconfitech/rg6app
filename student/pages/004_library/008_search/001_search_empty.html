@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>Reading Gate - My Info</title>
+	<title>Reading Gate - Library</title>
 	<link href="../../../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="../../../assets/css/font.css" rel="stylesheet" type="text/css">
 	<link href="../../../assets/css/common.css" rel="stylesheet" type="text/css">
@@ -48,7 +48,7 @@
 									<a class="nav-link" aria-current="page" href="#">Dodo ABC</a>
 								</li>
 								<li class="nav-item mx-2">
-									<a class="nav-link" aria-current="page" href="#">Library</a>
+									<a class="nav-link active" aria-current="page" href="#">Library</a>
 								</li>
 								<li class="nav-item mx-2">
 									<a class="nav-link" aria-current="page" href="#">Calendar</a>
@@ -60,7 +60,7 @@
 									<a class="nav-link" aria-current="page" href="#">Challenge</a>
 								</li>
 								<li class="nav-item mx-2">
-									<a class="nav-link active" aria-current="page" href="#">My Info</a>
+									<a class="nav-link" aria-current="page" href="#">My Info</a>
 								</li>
 							</ul>
 						</div>
@@ -70,7 +70,7 @@
 						<a class="btn mr-1"> <img src="../../../assets/image/icon/back_icon.png"
 								srcset="../../../assets/image/icon/back_icon@2x.png 2x, ../../../assets/image/icon/back_icon@3x.png.png 3x"
 								alt="" class="mb-1" width="10" height="16" /> </a>
-						<span>화면 설정</span>
+						<span>eBook</span>
 					</div>
 					<!--주요 학습정보-->
 					<div class="d-flex mr-3 px-0 text-right">
@@ -180,31 +180,38 @@
 			</nav>
 		</div>
 	</div>
-	<!--Study Profile-->
+	<!--Search-->
 	<div class="container my-lg-3">
 		<div class="d-flex">
 			<!--좌측-->
 			<div class="left-menu box-common-side-menu d-lg-block d-none">
 				<div class="px-1 mb-3">
-					<h6>Category</h6>
+					<h6>My Study</h6>
 				</div>
 				<div class="left-btn">
-					<a href="">학습 프로필</a>
+					<div class="position-absolute red-dot"></div>
+					<a href="">To-Do</a>
 				</div>
 				<div class="left-btn">
-					<a href="">레벨 테스트</a>
+					<a href="">Favorite</a>
+				</div>
+				<div class="my-3 px-1">
+					<h6>Book Finder</h6>
+				</div>
+				<div class="left-btn">
+					<a href="">Pre K</a>
+				</div>
+				<div class="left-btn">
+					<a href="">eBook</a>
+				</div>
+				<div class="left-btn">
+					<a href="">pBook Quiz</a>
+				</div>
+				<div class="left-btn">
+					<a href="">New Books</a>
 				</div>
 				<div class="left-btn active">
-					<a href="">화면 설정</a>
-				</div>
-				<div class="left-btn">
-					<a href="">회원 정보</a>
-				</div>
-				<div class="left-btn">
-					<a href="">학습 일시중지</a>
-				</div>
-				<div class="left-btn">
-					<a href="">결제 이력</a>
+					<a href="">Search</a>
 				</div>
 			</div>
 			<!--우측-->
@@ -216,82 +223,75 @@
 							<img src="../../../assets/image/icon/dot_icon.png" alt=""
 								srcset="../../../assets/image/icon/dot_icon@2x.png 2x, ../../../assets/image/icon/dot_icon@3x.png 3x"
 								width="8" height="8" class="mr-2" />
-							<span class="mr-2 txt-grey-16">My Info</span>
+							<span class="mr-2 txt-grey-16">Library</span>
 							<img src="../../../assets/image/icon/mini_right_arrow.png" alt=""
 								srcset="../../../assets/image/icon/mini_right_arrow@2x.png 2x, ../../../assets/image/icon/mini_right_arrow@3x.png 3x"
 								class="mr-2" />
-							<span class="txt-dark-16">Screen Setting</span>
+							<span class="txt-dark-16">Search</span>
 						</div>
 					</div>
 				</div>
-				<div class="row mt-3 mb-3">
-					<div class="col">
-						<span class="txt-dark-18 font-weight-bold">
-							시작 화면</span>
+				<!-- Search -->
+				<div class="container d-flex my-3">
+					<div class="form-group pl-2 mb-0">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="formInput16"
+							value="option1">
+						<label class="form-check-label" for="formInput16">eBook</label>
+					</div>
+					<div class="form-group pl-5 mb-0">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="formInput17"
+							value="option2" checked>
+						<label class="form-check-label" for="formInput17">pBook Quiz</label>
 					</div>
 				</div>
-				<div class="row mb-3">
-					<div class="col-12">
-						<div class="form">
-							<div class="bg-pale-grey form-check mb-2 py-2 rounded-10">
-								<label class="form-check-label d-flex align-items-center">
-									<input type="radio" class="mr-3" name="intro" checked>Home
-								</label>
+				<div class="container px-0">
+					<div class="row">
+						<div class="col-12 col-md-10 mb-3">
+							<div class="form-group mb-0">
+								<input type="text" id="inputEnd" class="form-control rounded-10 dim-input"
+									placeholder="Title, Keyword, ISBN …">
 							</div>
-							<div class="bg-pale-grey form-check mb-2 py-2 rounded-10">
-								<label class="form-check-label d-flex align-items-center">
-									<input type="radio" class="mr-3" name="intro">To-Do / Assignment
-								</label>
-							</div>
+						</div>
+						<div class="col-12 col-md-2 mb-3 ">
+							<button type="button" class="btn btn-rg-blue btn-mp-s w-100 rounded-10">Search</button>
 						</div>
 					</div>
 				</div>
-				<div class="row mt-3 mb-3">
-					<div class="col">
-						<span class="txt-dark-18 font-weight-bold">
-							학습 화면</span>
-					</div>
-				</div>
-				<div class="row mt-3 mb-2">
-					<div class="col-12">
-						<div class="bg-pale-grey form-check mb-2 py-2 rounded-10">
-							<input type="checkbox" id="check1" checked />
-							<div class="custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input m-0" id="formCustomCheckbox44"
-									checked>
-								<label class="custom-control-label m-0" for="formCustomCheckbox44"></label>
-								<span>Step2(Vocabulary) Hint / Skip</span>
-							</div>
+				<!-- Search Result -->
+				<div>
+					<div class="mb-3 row">
+						<div class="col">
+							<span class="txt-dark-18 font-weight-bold">Search Result</span>
 						</div>
-						<div class="bg-pale-grey form-check mb-2 py-2 rounded-10">
-							<input type="checkbox" id="check2" checked />
-							<div class="custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input m-0" id="formCustomCheckbox45"
-									checked>
-								<label class="custom-control-label m-0" for="formCustomCheckbox45"></label>
-								<span>Step3(Summary) Hint 보기</span>
+					</div>
+					<div class="row">
+						<!-- 빈 화면: 검색한 도서가 없는 경우 -->
+						<div class="col-12">
+							<div class="box no-list">
+								<span>검색 결과가 없습니다.</span>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row mt-3 mb-3">
-					<div class="col">
-						<span class="txt-dark-18 font-weight-bold">
-							시스템 언어</span>
-					</div>
-				</div>
-				<div class="row mb-5">
-					<div class="col-12 col-lg-3 mb-3">
-						<div class="form-group mb-0">
-							<select id="studyLevel" class="form-control rounded-10 select-dem txt-dark-14">
-								<option>한국어</option>
-								<option>English</option>
-								<option>Tiếng Việt</option>
-							</select>
+				<!--도서정보-->
+				<div class="modal fade" id="bookInfo" tabindex="-1" aria-labelledby="bookInfo" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content modal-bg">
+							<div class="d-flex justify-content-between mb-3">
+								<span class="modal-title px-2">Book Info</span>
+								<a href="#" class="p-2" data-dismiss="modal" aria-label="Close"><img
+										src="../../../assets/image/icon/delete.png"
+										srcset="../../../assets/image/icon/delete@2x.png 2x, ../../../assets/image/icon/delete@3x.png 3x"
+										alt=""></a>
+							</div>
+							<!--도서정보:내용-->
+							<div class="container">
+								<div class="row">
+									<div class="col-4 px-2 mb-2">
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="col-12 col-lg-2 mb-3">
-						<button type="button" class="btn btn-rg-blue p-2 w-100 rounded-10">Save</button>
 					</div>
 				</div>
 			</div>
