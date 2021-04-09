@@ -9,7 +9,8 @@
 }
 
 body {
-    background-color: #f7f9fa;
+    background-color: #ffffff;
+    background-image: url(../image/bg/dot-grid.png);
 }
 
 a {
@@ -39,7 +40,7 @@ select::-ms-expand {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #fff !important;
+    background-color: #f0f2f5 !important;
     overflow-x: hidden;
     transition: 0.1s;
     padding-top: 60px;
@@ -148,6 +149,10 @@ input[type="checkbox"]:checked+label {
 
 .bg-pale-grey {
     background-color: #f0f2f5;
+}
+
+.bg-pale-grey-2 {
+    background-color: #f4f4f7;
 }
 
 .bg-tomato {
@@ -591,7 +596,7 @@ input[type="checkbox"]:checked+label {
 
 .dropdown-menu.common-top {
     min-width: 300px;
-    background-color: #f7f9fa;
+    background-color: #ffffff;
 }
 
 .space-bottom {
@@ -719,6 +724,7 @@ input[type="checkbox"]:checked+label {
 
 .table tbody tr td {
     border-top: 0px !important;
+    border-bottom: 1px solid #dee2e6 !important;
 }
 
 .date tr td div.today {
@@ -969,6 +975,11 @@ input[type="checkbox"]:checked+label {
     margin-bottom: 5px;
 }
 
+.btn.re-writng {
+    background-color: #5F6B74 !important;
+    margin-bottom: 5px;
+}
+
 .btn.report {
     background-color: #2ECC49 !important;
     margin-bottom: 5px;
@@ -1084,7 +1095,7 @@ input[type="checkbox"]:checked+label {
 /* 좌측 */
 .left-menu .left-btn {
     position: relative;
-    background-color: #ffffff;
+    background-color: #f0f2f5;
     color: #000000;
     padding: 12px 5px 12px 18px;
     margin-bottom: 15px;
@@ -1119,7 +1130,7 @@ input[type="checkbox"]:checked+label {
 }
 
 .left-btn-sub {
-    background-color: #fff;
+    background-color: #f0f2f5;
     color: #000000;
     padding: 12px 5px 4px 18px;
     margin-bottom: 15px;
@@ -1279,7 +1290,7 @@ input[type="checkbox"]:checked+label {
 
 /* Assessment 카드 아이템 */
 .assessment-card {
-    background-color: #fff;
+    background-color: #f0f2f5;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -1424,7 +1435,7 @@ input[type="checkbox"]:checked+label {
 /* 레벨업 챠트 */
 .level-up-chart .col-12.d-flex {
     margin-bottom: 20px;
-    background-color: #fff;
+    background-color: #f4f4f7;
     border-radius: 10px;
 }
 
@@ -1455,6 +1466,7 @@ input[type="checkbox"]:checked+label {
 
 .progress {
     border-radius: 999px;
+    background-color: #ffffff;
 }
 
 .progress .progress-bar {
@@ -1491,7 +1503,7 @@ input[type="checkbox"]:checked+label {
 .kor-info {
     padding: 20px;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: #f4f4f7;
     margin-bottom: 20px;
 }
 
@@ -1500,6 +1512,7 @@ input[type="checkbox"]:checked+label {
     font-weight: bold;
     color: #404040;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .kor-info-title+.no-pass {
@@ -1527,14 +1540,22 @@ input[type="checkbox"]:checked+label {
 }
 
 .dropdown-menu.dropdown-menu-right {
-    background-color: #f7f9fa;
     border-radius: 10px;
+    border-width: 0.5px;
+    border-color: #dee2e6;
+}
+
+.dropdown-menu.dropdown-menu-left {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-width: 0.5px;
 }
 
 /* 도도 프렌즈 */
 .friends-card {
     padding: 20px;
     border-radius: 10px;
+    border: 2px solid #f0f2f5;
     background-color: #ffffff;
 }
 
@@ -1591,7 +1612,7 @@ input[type="checkbox"]:checked+label {
 .my-info .my-info-menu div a div {
     padding: 15px 15px 15px 15px;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: #f0f2f5;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -1676,7 +1697,7 @@ td {
 .account .account-card {
     padding: 20px 15px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #f4f4f7;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -1704,7 +1725,7 @@ td {
 .deactive .deactive-card {
     padding: 20px 15px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #f4f4f7;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -1819,7 +1840,7 @@ td {
 
 .rank-card {
     display: flex;
-    background-color: #ffffff;
+    background-color: #f4f4f7;
     border-radius: 10px;
     padding: 5px 15px;
 }
@@ -1854,15 +1875,18 @@ td {
         flex-flow: column;
         justify-content: center;
     }
+
     .rank-card .user-info .name {
         font-size: 18px;
     }
+
     .rank-card .user-info .points div {
         display: inline-block;
         width: 70px;
         font-size: 14px;
         color: #929292;
     }
+
     .rank-card .user-info .read div {
         display: inline-block;
         width: 70px;
@@ -1878,28 +1902,32 @@ td {
         justify-content: space-around;
         align-items: center;
     }
+
     .rank-card .user-info .name {
         font-size: 22px;
     }
+
     .rank-card .user-info .points div {
         font-size: 16px;
         text-align: center;
         color: #929292;
     }
+
     .rank-card .user-info .points div:nth-child(2) {
         font-size: 18px;
         color: #000000 !important;
     }
+
     .rank-card .user-info .read div {
         font-size: 16px;
         text-align: center;
         color: #929292;
     }
+
     .rank-card .user-info .read div:nth-child(2) {
         font-size: 18px;
         color: #000000 !important;
     }
-   
 }
 
 .kor-ranking-info .title {
@@ -1922,9 +1950,11 @@ td {
         display: flex;
         flex-flow: column;
     }
+
     .message-item div:nth-child(1) {
         order: 2;
     }
+
     .message-item div:nth-child(2) {
         order: 1;
     }
@@ -1938,7 +1968,7 @@ td {
 }
 
 .message-item {
-    background-color: #ffffff;
+    background-color: #f0f2f5;
     padding: 20px;
     border-radius: 10px;
 }
@@ -1963,4 +1993,339 @@ textarea {
     padding: 20px;
     border-radius: 10px;
     min-height: 350px;
+}
+
+#forgotIDtab a.nav-link.active {
+    background-color: #2371e3;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#forgotIDtab a.nav-link {
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #979797;
+}
+
+#navbarSupportedContent .nav-link img {
+    margin-right: 5px;
+    margin-bottom: 2px;
+    width: 24px;
+    height: 24px;
+}
+
+#navbarSupportedContent a.nav-link span {
+    color: #7F99BC;
+}
+
+#navbarSupportedContent a.nav-link.on span {
+    color: #0070FB;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light .bg-white {
+    background-color: #f0f2f5 !important;
+}
+
+.card-book-finder {
+    min-height: 122px;
+}
+
+.bg-library {
+    background: #1597bb;
+}
+
+.bg-img-library {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-to-do {
+    background-color: #7F99BC;
+}
+
+.bg-img-to-do {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-favorite {
+    background-color: #7F99BC;
+}
+
+.bg-img-favorite {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-prek {
+    background-color: #7F99BC;
+}
+
+.bg-img-prek {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-ebook {
+    background-color: #7F99BC;
+}
+
+.bg-img-ebook {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-pbook {
+    background-color: #7F99BC;
+}
+
+.bg-img-pbook {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-new-books {
+    background-color: #7F99BC;
+}
+
+.bg-img-new-books {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-search {
+    background-color: #7F99BC;
+}
+
+.bg-img-search {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-achievement {
+    background-color: #7F99BC;
+}
+
+.bg-img-achievement {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-attendance {
+    background-color: #7F99BC;
+}
+
+.bg-img-attendance {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-book-report {
+    background-color: #7F99BC;
+}
+
+.bg-img-book-report {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-book-progress-levels {
+    background-color: #7F99BC;
+}
+
+.bg-img-book-progress-levels {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-king-of-reader {
+    background-color: #7F99BC;
+}
+
+.bg-img-king-of-reader {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-dodo-friends {
+    background-color: #7F99BC;
+}
+
+.bg-img-dodo-friends {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-level-master {
+    background-color: #7F99BC;
+}
+
+.bg-img-level-master {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-profile {
+    background-color: #7F99BC;
+}
+
+.bg-img-profile {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-level-test {
+    background-color: #7F99BC;
+}
+
+.bg-img-level-test {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-set-screen {
+    background-color: #7F99BC;
+}
+
+.bg-img-set-screen {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-user-info {
+    background-color: #7F99BC;
+}
+
+.bg-img-user-info {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-deactive {
+    background-color: #7F99BC;
+}
+
+.bg-img-deactive {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-payment-history {
+    background-color: #7F99BC;
+}
+
+.bg-img-payment-history {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-point-ranking {
+    background-color: #7F99BC;
+}
+
+.bg-img-point-ranking {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.bg-kor-ranking {
+    background-color: #7F99BC;
+}
+
+.bg-img-kor-ranking {
+    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.to-do-red-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #ea0000;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    top: 10px;
+    right: 10px;
+    border-radius: 999px;
+}
+
+.notice-bar {
+    padding: 15px 0px 15px 0px;
+    background-color: #e13939;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.notice-bar a {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.bg-btn-lock {
+    border-radius: 10px;
+    background-color: rgba(64, 64, 64, 0.5);
+    top: 0;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    z-index: 1;
+}
+
+.bg-lock {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: #f0f2f5;
+    border-radius: 999px;
 }
