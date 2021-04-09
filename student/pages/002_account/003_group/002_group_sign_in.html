@@ -53,9 +53,20 @@
         <div class="row">
             <div class="col col-md-10 col-lg-6 mx-auto">
                 <!--그룹명-->
-                <div class="mb-3">
-                    <h3 id=schoolNeme>성남수내초등학교</h3>
-                </div>
+				<div class="d-flex justify-content-between my-3">
+					<h3 id="schoolNeme">성남수내초등학교</h3>
+					<div class="dropdown">
+						<button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							<img src="../../../assets/image/icon/menu.png"
+								srcset="../../../assets/image/icon/menu@2x.png 2x, ../../../assets/image/icon/menu@3x.png 3x"
+								alt="" width="20" height="20" />
+						</button>
+						<div class="dropdown-menu dropdown-menu-right rounded-10" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="#">인트로 설정</a>
+						</div>
+					</div>
+				</div>
                 <!-- 아이디, 비번 입력 -->
                 <div class="my-3">
                     <div class="mb-3">
@@ -66,7 +77,7 @@
                             placeholder="Password">
                     </div>
                     <div class="mb-3">
-                        <input type="checkbox" id="check1"/>
+                        <input type="checkbox" id="check1" />
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input m-0" id="formCustomCheckbox44" checked>
                             <label class="custom-control-label m-0" for="formCustomCheckbox44"></label>
@@ -74,7 +85,7 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <input type="checkbox" id="check2"/>
+                        <input type="checkbox" id="check2" />
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input m-0" id="formCustomCheckbox45">
                             <label class="custom-control-label m-0" for="formCustomCheckbox45"></label>
@@ -82,7 +93,7 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <button type="button" class="btn btn-rg-blue btn-mp-s w-100 rounded-10">Enter</button>
+                        <button type="button" class="btn btn-rg-blue btn-mp-s w-100 rounded-10" data-toggle="modal" data-target="#changePassword">Enter</button>
                     </div>
                     <div class="pt-2">
                         <div class="mb-3 text-center">
@@ -91,6 +102,40 @@
                         <!--학원의 경우 숨김-->
                         <div class="mb-5 text-center">
                             <a href="">아이디 찾기</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 최초 비밀번호 변경 팝업 -->
+                <div class="modal fade" id="changePassword" tabindex="-1" aria-labelledby="periodSearch"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content modal-bg">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="modal-title px-1">Change Password</span>
+                                <a href="#" class="p-2" data-dismiss="modal" aria-label="Close"><img
+                                        src="../../../assets/image/icon/delete.png"
+                                        srcset="../../../assets/image/icon/delete@2x.png 2x, ../../../assets/image/icon/delete@3x.png 3x"
+                                        alt=""></a>
+                            </div>
+                            <div class="container px-0">
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <label class="pl-1">비밀번호 변경후 사용해 주세요.</label>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label class="pl-1">변경할 비밀번호</label>
+                                        <div class="form-group mb-0 position-relative">
+                                            <a href="#" class="btn-link position-absolute passowrd-hide">Hide</a>
+                                            <input type="text" id="inputText" class="form-control rounded-10 dim-input"
+                                                placeholder="영문, 숫자 조합 6자리 이상 입력">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3 ">
+                                        <button type="button"
+                                            class="btn btn-rg-blue btn-mp-s w-100 rounded-10">Save</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
