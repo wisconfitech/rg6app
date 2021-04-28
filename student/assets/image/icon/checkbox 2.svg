@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="73px" height="33px" viewBox="0 0 73 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>checkbox</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="체크박스" transform="translate(-32.000000, -25.000000)">
+            <g id="checkbox" transform="translate(32.000000, 25.000000)">
+                <rect id="Rectangle" fill-opacity="0.2" fill="#202020" x="0" y="0" width="32" height="32" rx="6"></rect>
+                <g id="Group" transform="translate(40.000000, 0.000000)">
+                    <path d="M23.6783072,10.7073332 L14.4580135,21.0806546 L8.90305175,16.6374709 C8.64474995,16.4302402 8.26662755,16.4734542 8.06037897,16.7307739 C7.85314826,16.9900578 7.89538011,17.367198 8.1536819,17.5744288 L14.1525692,22.3741279 C14.2635506,22.4625201 14.396139,22.5057341 14.5277452,22.5057341 C14.6937262,22.5057341 14.8587251,22.4379667 14.9765814,22.3043962 L24.5759796,11.5048277 C24.7959781,11.2583115 24.773389,10.8782248 24.5258907,10.6582263 C24.2774103,10.4372457 23.8983057,10.4588527 23.6783072,10.7073332 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <polyline id="Path-2" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="8.06037897 16.7307739 14.4480362 21.7743683 24.1140289 10.9144554"></polyline>
+                </g>
+                <g id="Group" transform="translate(8.000000, 0.000000)">
+                    <rect id="Rectangle" stroke="#76B8FF" fill="#077AF4" x="32.5" y="0.5" width="31" height="31" rx="6"></rect>
+                    <path d="M55.6783072,10.7073332 L46.4580135,21.0806546 L40.9030517,16.6374709 C40.64475,16.4302402 40.2666276,16.4734542 40.060379,16.7307739 C39.8531483,16.9900578 39.8953801,17.367198 40.1536819,17.5744288 L46.1525692,22.3741279 C46.2635506,22.4625201 46.396139,22.5057341 46.5277452,22.5057341 C46.6937262,22.5057341 46.8587251,22.4379667 46.9765814,22.3043962 L56.5759796,11.5048277 C56.7959781,11.2583115 56.773389,10.8782248 56.5258907,10.6582263 C56.2774103,10.4372457 55.8983057,10.4588527 55.6783072,10.7073332 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <polyline id="Path-2" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="40.060379 16.7307739 46.4480362 21.7743683 56.1140289 10.9144554"></polyline>
+                    <polyline id="Path-2-Copy" stroke-opacity="0.8" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="0.0603789725 16.7307739 6.44803619 21.7743683 16.1140289 10.9144554"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
