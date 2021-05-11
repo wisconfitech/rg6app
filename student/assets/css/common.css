@@ -1905,6 +1905,7 @@ td {
 
     .rank-card .user-info .name {
         font-size: 22px;
+        width: 40%;
     }
 
     .rank-card .user-info .points div {
@@ -2328,4 +2329,14 @@ nav.navbar.navbar-expand-lg.navbar-light .bg-white {
     padding: 10px;
     background-color: #f0f2f5;
     border-radius: 999px;
+}
+
+/* 2021-04-26 이후 작업 */
+
+.notice-comment {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f0f2f5;
+    margin-bottom: 15px;
+    min-height: 110px;
 }
