@@ -10,7 +10,7 @@
 
 body {
     background-color: #ffffff;
-    background-image: url(../image/bg/dot-grid.png);
+    /* background-image: url(../image/bg/dot-grid.png); */
 }
 
 a {
@@ -140,7 +140,7 @@ input[type="checkbox"]:checked+label {
 }
 
 .bg-focus {
-    background-image: -webkit-radial-gradient(center center, rgb(255, 255, 255) 75.7463%, rgb(197, 197, 197) 100%);
+    background-color: #ffffff;
 }
 
 .bg-dark {
@@ -1216,7 +1216,7 @@ input[type="checkbox"]:checked+label {
 }
 
 .bg-bottom {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: #f0f2f5f0;
 }
 
 /* 리포트 */
@@ -1466,7 +1466,7 @@ input[type="checkbox"]:checked+label {
 
 .progress {
     border-radius: 999px;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
 }
 
 .progress .progress-bar {
@@ -2044,243 +2044,344 @@ nav.navbar.navbar-expand-lg.navbar-light .bg-white {
     background-size: contain;
 }
 
+.bg-to-do span,
+.bg-favorite span,
+.bg-prek span,
+.bg-ebook span,
+.bg-pbook span,
+.bg-new-books span,
+.bg-search span,
+.bg-achievement span,
+.bg-attendance span,
+.bg-book-report span,
+.bg-book-progress-levels span,
+.bg-king-of-reader span,
+.bg-dodo-friends span,
+.bg-level-master span,
+.bg-profile span,
+.bg-level-test span,
+.bg-set-screen span,
+.bg-user-info span,
+.bg-deactive span,
+.bg-payment-history span,
+.bg-point-ranking span,
+.bg-kor-ranking span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 575px) {
+
+    .bg-to-do span,
+    .bg-to-do img,
+    .bg-favorite span,
+    .bg-favorite img,
+    .bg-prek span,
+    .bg-prek img,
+    .bg-ebook span,
+    .bg-ebook img,
+    .bg-pbook span,
+    .bg-pbook img,
+    .bg-new-books span,
+    .bg-new-books img,
+    .bg-search span,
+    .bg-search img,
+    .bg-achievement span,
+    .bg-achievement img,
+    .bg-attendance span,
+    .bg-attendance img,
+    .bg-book-report span,
+    .bg-book-report img,
+    .bg-book-progress-levels span,
+    .bg-book-progress-levels img,
+    .bg-king-of-reader span,
+    .bg-king-of-reader img,
+    .bg-dodo-friends span,
+    .bg-dodo-friends img,
+    .bg-level-master span,
+    .bg-level-master img,
+    .bg-profile span,
+    .bg-profile img,
+    .bg-level-test span,
+    .bg-level-test img,
+    .bg-set-screen span,
+    .bg-set-screen img,
+    .bg-user-info span,
+    .bg-user-info img,
+    .bg-deactive span,
+    .bg-deactive img,
+    .bg-payment-history span,
+    .bg-payment-history img,
+    .bg-point-ranking span,
+    .bg-point-ranking img,
+    .bg-kor-ranking span,
+    .bg-kor-ranking img {
+        display: none;
+    }
+
+    .bg-to-do div:nth-child(1),
+    .bg-favorite div:nth-child(1),
+    .bg-prek div:nth-child(1),
+    .bg-ebook div:nth-child(1),
+    .bg-pbook div:nth-child(1),
+    .bg-new-books div:nth-child(1),
+    .bg-search div:nth-child(1),
+    .bg-achievement div:nth-child(1),
+    .bg-attendance div:nth-child(1),
+    .bg-book-report div:nth-child(1),
+    .bg-book-progress-levels div:nth-child(1),
+    .bg-king-of-reader div:nth-child(1),
+    .bg-dodo-friends div:nth-child(1),
+    .bg-level-master div:nth-child(1),
+    .bg-profile div:nth-child(1),
+    .bg-level-test div:nth-child(1),
+    .bg-set-screen div:nth-child(1),
+    .bg-user-info div:nth-child(1),
+    .bg-deactive div:nth-child(1),
+    .bg-payment-history div:nth-child(1),
+    .bg-point-ranking div:nth-child(1),
+    .bg-kor-ranking div:nth-child(1) {
+        height: 72px;
+    }
+}
+
 .bg-to-do {
-    background-color: #7F99BC;
+    background-color: #fbc000;
 }
 
 .bg-img-to-do {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_02_a@x2.png);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right bottom;
     background-size: contain;
 }
 
 .bg-favorite {
-    background-color: #7F99BC;
+    background-color: #f6756f;
 }
 
 .bg-img-favorite {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_02_b@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-prek {
-    background-color: #7F99BC;
+    background-color: #f7b164;
 }
 
 .bg-img-prek {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_02_1@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-ebook {
-    background-color: #7F99BC;
+    background-color: #c29bf2;
 }
 
 .bg-img-ebook {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_02_2@x2.png);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right bottom;
     background-size: contain;
 }
 
 .bg-pbook {
-    background-color: #7F99BC;
+    background-color: #9ab7fd;
 }
 
 .bg-img-pbook {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_02_3@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-new-books {
-    background-color: #7F99BC;
+    background-color: #f49aac;
 }
 
 .bg-img-new-books {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_02_4@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-search {
-    background-color: #7F99BC;
+    background-color: #a8b4d4;
 }
 
 .bg-img-search {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_02_5@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-achievement {
-    background-color: #7F99BC;
+    background-color: #fa9579;
 }
 
 .bg-img-achievement {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_03_1@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-attendance {
-    background-color: #7F99BC;
+    background-color: #65d6ce;
 }
 
 .bg-img-attendance {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_03_2@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-book-report {
-    background-color: #7F99BC;
+    background-color: #70c0b0;
 }
 
 .bg-img-book-report {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_04_1@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-book-progress-levels {
-    background-color: #7F99BC;
+    background-color: #a1ce78;
 }
 
 .bg-img-book-progress-levels {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_04_2@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-king-of-reader {
-    background-color: #7F99BC;
+    background-color: #f3a08d;
 }
 
 .bg-img-king-of-reader {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_05_1@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-dodo-friends {
-    background-color: #7F99BC;
+    background-color: #d9728f;
 }
 
 .bg-img-dodo-friends {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_05_2@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-level-master {
-    background-color: #7F99BC;
+    background-color: #9696ec;
 }
 
 .bg-img-level-master {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_05_3@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-profile {
-    background-color: #7F99BC;
+    background-color: #99baeb;
 }
 
 .bg-img-profile {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_06_1@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-level-test {
-    background-color: #7F99BC;
+    background-color: #89c1bc;
 }
 
 .bg-img-level-test {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_06_2@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-set-screen {
-    background-color: #7F99BC;
+    background-color: #ada7c7;
 }
 
 .bg-img-set-screen {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_06_3@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-user-info {
-    background-color: #7F99BC;
+    background-color: #d2b6e0;
 }
 
 .bg-img-user-info {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_06_4@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-deactive {
-    background-color: #7F99BC;
+    background-color: #90c9d5;
 }
 
 .bg-img-deactive {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_06_5@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-payment-history {
-    background-color: #7F99BC;
+    background-color: #efafb6;
 }
 
 .bg-img-payment-history {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_06_6@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-point-ranking {
-    background-color: #7F99BC;
+    background-color: #9696ec;
 }
 
 .bg-img-point-ranking {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_05_3@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
 }
 
 .bg-kor-ranking {
-    background-color: #7F99BC;
+    background-color: #9696ec;
 }
 
 .bg-img-kor-ranking {
-    background-image: url(../image/menu/05_challenge/banner01@1x.png);
+    background-image: url(../image/bg/top_banner/banner_05_3@x2.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
@@ -2339,4 +2440,8 @@ nav.navbar.navbar-expand-lg.navbar-light .bg-white {
     background-color: #f0f2f5;
     margin-bottom: 15px;
     min-height: 110px;
+}
+
+.level-up.status .progress {
+    background-color: #ffffff !important;
 }
