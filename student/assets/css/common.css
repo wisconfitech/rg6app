@@ -2445,3 +2445,62 @@ nav.navbar.navbar-expand-lg.navbar-light .bg-white {
 .level-up.status .progress {
     background-color: #ffffff !important;
 }
+
+/* 2021-5-12 이후 작업 */
+
+.home-user-info {
+    height: 84px;
+    white-space: nowrap;
+}
+
+.home-user-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #404040;
+}
+
+.border-purple {
+    border: 2px solid #646BC8 !important;
+}
+
+.circle-yellow {
+    background: #FBC108;
+    border: 3px solid #FFFFFF;
+    border-radius: 100px;
+}
+
+.circle-yellow.goal.active {
+    background: #2371E3 !important;
+}
+
+.circle-yellow.goal {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+}
+
+.bg-purple {
+    background: #646BC8;
+}
+
+.h-102px {
+    min-height: 102px;
+}
+
+.h-30 {
+    height: 30%;
+}
+
+.h-70 {
+    height: 70%;
+}
+
+.home-label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #8CA3C4;
+}
