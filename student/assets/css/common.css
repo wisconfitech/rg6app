@@ -293,6 +293,7 @@ input[type="checkbox"]:checked+label {
     display: flex;
     border-radius: 100rem;
     color: #ffffff;
+    border: 0.15rem solid #ffffff;
     display: -ms-flexbox !important;
 }
 
@@ -615,6 +616,10 @@ input[type="checkbox"]:checked+label {
     background-color: #E13939;
 }
 
+.btn-rg-red:hover {
+    color: #ffffff;
+}
+
 .btn-circle {
     width: 30px;
     height: 30px;
@@ -899,6 +904,30 @@ input[type="checkbox"]:checked+label {
 
 .date tr td div+div.attendance.bori {
     background-image: url('https://wcfresource.a1edu.com/NewSystem/image/Character/MainCharacter/Attend/img_bori.png');
+}
+
+.date tr td div+div.attendance.poopy {
+    background-image: url('https://wcfresource.a1edu.com/newsystem/image/character/maincharacter/poopy_01.png');
+}
+
+.date tr td div+div.attendance.robo_cleaner {
+    background-image: url('https://wcfresource.a1edu.com/newsystem/image/character/maincharacter/robo_cleaner_01.png');
+}
+
+.date tr td div+div.attendance.dori {
+    background-image: url('https://wcfresource.a1edu.com/newsystem/image/character/maincharacter/dori_01.png');
+}
+
+.date tr td div+div.attendance.erika {
+    background-image: url('https://wcfresource.a1edu.com/newsystem/image/character/maincharacter/erika_01.png');
+}
+
+.date tr td div+div.attendance.ella {
+    background-image: url('https://wcfresource.a1edu.com/newsystem/image/character/maincharacter/ella_01.png');
+}
+
+.date tr td div+div.attendance.poika {
+    background-image: url('https://wcfresource.a1edu.com/newsystem/image/character/maincharacter/poika_01.png');
 }
 
 /* 도서정보 */
