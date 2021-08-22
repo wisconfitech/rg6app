@@ -13,6 +13,26 @@ body {
     /* background-image: url(../image/bg/dot-grid.png); */
 }
 
+body {
+    background-image: url('../image/bg/bg_cloud_study.png');
+    background-position: bottom -150px center;
+    background-repeat: repeat-x;
+    background-size: 1920px;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 575px) {
+    body {
+        background-image: url('../image/bg/bg_cloud_study.png');
+        background-position: bottom left;
+        background-repeat: repeat-x;
+        background-size: 575px;
+        background-attachment: fixed;
+        min-height: 100vh;
+    }
+}
+
 a {
     text-decoration: none !important;
 }
