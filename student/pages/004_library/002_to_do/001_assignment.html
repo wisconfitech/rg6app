@@ -86,7 +86,7 @@
 					<!--화면 타이틀-->
 					<div class="align-items-center d-flex d-lg-none font-weight-bold pl-2 pr-0 txt-dark-18">
 						<a class="btn mr-1"> <img src="../../../assets/image/icon/back_icon.png"
-								srcset="../../../assets/image/icon/back_icon@2x.png 2x, ../../../assets/image/icon/back_icon@3x.png.png 3x"
+								srcset="../../../assets/image/icon/back_icon@2x.png 2x, ../../../assets/image/icon/back_icon@3x.png 3x"
 								alt="" class="mb-1" width="10" height="16" /> </a>
 						<span>To-Do</span>
 					</div>
@@ -210,7 +210,7 @@
 		</div>
 	</div>
 	<!--To-Do 메뉴-->
-	<div class="w-100 border-bottom d-block d-lg-none bg-white">
+	<div class="w-100 border-bottom d-block d-lg-none bg-white sub-top">
 		<div class="container">
 			<div class="row">
 				<div class="col px-0">
@@ -293,7 +293,7 @@
 				<!--필터-->
 				<div class="row mb-2">
 					<div class="col-12">
-						<div class="d-flex justify-content-between py-2">
+						<div class="d-flex justify-content-between align-items-center pl-1 py-1">
 							<a href="" data-toggle="dropdown"><span class="txt-dark-14 mr-2">Sort / 등록일순</span><img
 									src="../../../assets/image/icon/sort_down.png" alt=""
 									srcset="../../../assets/image/icon/sort_down@2x.png 2x, ../../../assets/image/icon/sort_down@3x.png 3x"
@@ -303,11 +303,26 @@
 								<a class="dropdown-item" href="#">학습중 우선</a>
 								<a class="dropdown-item" href="#">학습전 우선</a>
 							</div>
-							<span class="txt-dark-14">20 Books</span>
+							
 							<!--1권 이하일 경우 단위는 Book이라고 표시-->
+							<div class="dropdown">
+								<a class="btn d-flex align-items-center py-2" id="dropdownMenuButton" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false">
+									<span class="txt-dark-14 mr-2">20 Books</span>
+									<img src="../../../assets/image/icon/menu.png"
+										srcset="../../../assets/image/icon/menu@2x.png 2x, ../../../assets/image/icon/menu@3x.png 3x"
+										alt="" width="15" height="15" />
+								</a>
+								<div class="dropdown-menu dropdown-menu-right rounded-10" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Download Excel List</a>
+									<a class="dropdown-item text-danger" href="">Delete All</a>
+								</div>
+							</div>
+							
 						</div>
 					</div>
 				</div>
+				
 				<!--도서리스트-->
 				<div class="row">
 					<!--도서:In Progrss-->
@@ -593,46 +608,50 @@
 		</div>
 	</div>
 	<!--하단(페이지네이션)-->
-	<div class="page-nav bg-bottom fixed-bottom">
-		<div class="container my-2">
-			<div class="align-items-center d-flex justify-content-between justify-content-md-end">
-				<button type="button" class="border btn btn-light px-3 rounded-10">
-					<img src="../../../assets/image/icon/back_in_btn.png"
-						srcset="../../../assets/image/icon/back_in_btn@2x.png 2x, ../../../assets/image/icon/back_in_btn@3x.png 3x"
-						alt="" width="6" height="12" />
-				</button>
-				<div class="d-flex align-items-center">
-					<input type="text" class="form-control ml-2 rounded-10 text-center page-input-box">
-					<span class="ml-2">/ 20</span>
-				</div>
-				<button type="button" class="border btn btn-light ml-2 px-3 rounded-10">
-					<img src="../../../assets/image/icon/next_in_btn.png"
-						srcset="../../../assets/image/icon/next_in_btn@2x.png 2x, ../../../assets/image/icon/next_in_btn@3x.png 3x"
-						alt="" width="6" height="12" />
-				</button>
-			</div>
-		</div>
-		<!--일괄작업: 도서에 체크박스를 체크하면 활성화-->
-		<div class="fixed-bottom d-none">
-			<div class="bg-selected p-2 px-3 text-center txt-white-16">
+	<div class="page-nav fixed-bottom">
+		<div class="position-relative">
+			<div class="py-2 position-absolute bg-bottom w-100" style="bottom: 0; left: 0; right: 0;">
 				<div class="container">
-					<!-- 일괄작업: 선택후 작업 -->
-					<div class="row">
-						<div class="col-12 d-flex justify-content-center align-items-center">
-							<div class="mr-2">Selected: 10</div>
-							<div class="selected dropdown">
-								<button type="button" class="btn text-danger" id="delete" data-toggle="dropdown"
-									aria-haspopup="true" aria-expanded="false">Delete</button>
-								<div class="dropdown-menu rounded-10 mb-2" aria-labelledby="dropdownMenuButton">
-									<a class="dropdown-item text-danger" href="#">학습전 과제만 삭제</a>
+					<div class="align-items-center d-flex justify-content-between justify-content-md-end">
+						<button type="button" class="border btn btn-light px-3 rounded-10">
+							<img src="../../../assets/image/icon/back_in_btn.png"
+								srcset="../../../assets/image/icon/back_in_btn@2x.png 2x, ../../../assets/image/icon/back_in_btn@3x.png 3x"
+								alt="" width="6" height="12" />
+						</button>
+						<div class="d-flex align-items-center">
+							<input type="text" class="form-control ml-2 rounded-10 text-center page-input-box">
+							<span class="ml-2">/ 20</span>
+						</div>
+						<button type="button" class="border btn btn-light ml-2 px-3 rounded-10">
+							<img src="../../../assets/image/icon/next_in_btn.png"
+								srcset="../../../assets/image/icon/next_in_btn@2x.png 2x, ../../../assets/image/icon/next_in_btn@3x.png 3x"
+								alt="" width="6" height="12" />
+						</button>
+					</div>
+				</div>
+			</div>
+			<!--일괄작업: 도서에 체크박스를 체크하면 활성화-->
+			<div class="position-absolute w-100 d-none" style="bottom: 0;">
+				<div class="bg-selected p-2 px-3 text-center txt-white-16">
+					<div class="container">
+						<!-- 일괄작업: 선택후 작업 -->
+						<div class="row">
+							<div class="col-12 d-flex justify-content-center align-items-center">
+								<div class="mr-2">Selected: 10</div>
+								<div class="selected dropdown">
+									<button type="button" class="btn text-danger" id="delete" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">Delete</button>
+									<div class="dropdown-menu rounded-10 mb-2" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item text-danger" href="#">학습전 과제만 삭제</a>
+									</div>
 								</div>
-							</div>
-							<div class="selected dropdown">
-								<button type="button" class="btn" id="export" data-toggle="dropdown"
-									aria-haspopup="true" aria-expanded="false">Export</button>
-								<div class="dropdown-menu rounded-10 mb-2" aria-labelledby="dropdownMenuButton">
-									<a class="dropdown-item" href="#">Vocabulary</a>
-									<a class="dropdown-item" href="#">Excel List</a>
+								<div class="selected dropdown">
+									<button type="button" class="btn" id="export" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">Export</button>
+									<div class="dropdown-menu rounded-10 mb-2" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">Vocabulary</a>
+										<a class="dropdown-item" href="#">Excel List</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -640,7 +659,33 @@
 				</div>
 			</div>
 		</div>
+		<!-- 하단 메뉴(수강중 일때만 보여줌) -->
+		<div class="d-sm-none bg-white border-top" id="mPubMenu">
+			<div class="d-flex justify-content-around text-center" style="overflow-x: scroll;">
+				<a class="nav-link" aria-current="page" href="#"><img
+					src="../../../assets/image/menu/00_home/ico01@1x.png"
+					srcset="../../../assets/image/menu/00_home/ico01@2x.png 2x, ../../../assets/image/menu/00_home/ico01@3x.png 3x"
+					alt="" width="24" height="24" /><br><span>DodoABC</span></a>
+				<a class="nav-link on" aria-current="page" href="#"><img
+					src="../../../assets/image/menu/00_home/ico02_hover@1x.png"
+					srcset="../../../assets/image/menu/00_home/ico02_hover@2x.png 2x, ../../../assets/image/menu/00_home/ico02_hover@3x.png 3x"
+					alt="" width="24" height="24" /><br><span>Library</span></a>
+				<a class="nav-link" aria-current="page" href="#"><img
+					src="../../../assets/image/menu/00_home/ico03@1x.png"
+					srcset="../../../assets/image/menu/00_home/ico03@2x.png 2x, ../../../assets/image/menu/00_home/ico03@3x.png 3x"
+					alt="" width="24" height="24" /><br><span>Calendar</span></a>
+				<a class="nav-link" aria-current="page" href="#"><img
+					src="../../../assets/image/menu/00_home/ico04@1x.png"
+					srcset="../../../assets/image/menu/00_home/ico04@2x.png 2x, ../../../assets/image/menu/00_home/ico04@3x.png 3x"
+					alt="" width="24" height="24" /><br><span>Report</span></a>
+				<a class="nav-link" aria-current="page" href="#"><img
+					src="../../../assets/image/menu/00_home/ico05@1x.png"
+					srcset="../../../assets/image/menu/00_home/ico05@2x.png 2x, ../../../assets/image/menu/00_home/ico05@3x.png 3x"
+					alt="" width="24" height="24" /><br><span>Challenge</span></a>
+			</div>
+		</div>
 	</div>
+
 	<div class="space-bottom"></div>
 	<!-- Bootstrap core JavaScript
     ================================================== -->

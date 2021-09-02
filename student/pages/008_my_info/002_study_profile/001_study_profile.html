@@ -205,7 +205,7 @@
 				<h5 class="text-light mb-0"><span>My Info</span><img
 						src="../../../assets/image/icon/mini_right_arrow.png" alt=""
 						srcset="../../../assets/image/icon/mini_right_arrow@2x.png 2x, ../../../assets/image/icon/mini_right_arrow@3x.png 3x"
-						class="mx-2" /><span>Study Profile</span></h5>
+						class="mx-2" /><span>Reading Profile</span></h5>
 			</div>
 		</div>
 	</div>
@@ -218,7 +218,7 @@
 					<h6>Category</h6>
 				</div>
 				<div class="left-btn active">
-					<a href="">학습 프로필</a>
+					<a href="">리딩 프로필</a>
 				</div>
 				<div class="left-btn">
 					<a href="">레벨 테스트</a>
@@ -249,19 +249,22 @@
 							<img src="../../../assets/image/icon/mini_right_arrow.png" alt=""
 								srcset="../../../assets/image/icon/mini_right_arrow@2x.png 2x, ../../../assets/image/icon/mini_right_arrow@3x.png 3x"
 								class="mr-2" />
-							<span class="txt-dark-16">Study Profile</span>
+							<span class="txt-dark-16">Reading Profile</span>
 						</div>
 					</div>
 				</div>
 				<!-- Study Profile -->
 				<div class="row mb-3">
-					<div class="col pt-2">
-						<span class="txt-dark-18 font-weight-bold">My Study Level</span>
+					<div class="col-12 pt-2">
+						<span class="txt-dark-18 font-weight-bold">My Reading Level</span>
+					</div>
+					<div class="col-12 pt-2">
+						<span class="txt-dark-14">나의 독서 레벨을 설정할 수 있습니다. Level Master를 획득한 레벨은 메달이 표시됩니다.</span>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12 col-md-9 mb-3 mb-md-0">
-						<div class="form-group mb-0">
+					<div class="col-12 mb-3">
+						<!-- <div class="form-group mb-0">
 							<select id="studyLevel" class="form-control rounded-10 select-dem txt-dark-14">
 								<option>KA</option>
 								<option>KB</option>
@@ -285,10 +288,259 @@
 								<option>6B</option>
 								<option>6C</option>
 							</select>
+						</div> -->
+
+						<!-- 레벨 선택 옵션 -->
+						<div class="row">
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lvPK" value="lvPK">
+										<label class="form-check-label" for="lvPK">PK</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_prek@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lvKA" value="lvKA" checked>
+										<label class="form-check-label" for="lvKA">KA</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_ka@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lvKB" value="lvKB">
+										<label class="form-check-label" for="lvKB">KB</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_kb@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lvKC" value="lvKC">
+										<label class="form-check-label" for="lvKC">KC</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_kc@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv1A" value="lv1A">
+										<label class="form-check-label" for="lv1A">1A</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_1a@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv1B" value="lv1B">
+										<label class="form-check-label" for="lv1B">1B</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_1b@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv1C" value="lv1C">
+										<label class="form-check-label" for="lv1C">1C</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_1c@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv2A" value="lv2A">
+										<label class="form-check-label" for="lv2A">2A</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_2a@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv2B" value="lv2B">
+										<label class="form-check-label" for="lv2B">2B</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_2b@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv2C" value="lv2C">
+										<label class="form-check-label" for="lv2C">2C</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_2C@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv3A" value="lv3A">
+										<label class="form-check-label" for="lv3A">3A</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_3a@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv3B" value="lv3B">
+										<label class="form-check-label" for="lv3B">3B</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_3b@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv3C" value="lv3C">
+										<label class="form-check-label" for="lv3C">3C</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_3c@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv4A" value="lv4A">
+										<label class="form-check-label" for="lv4A">4A</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_4a@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv4B" value="lv4B">
+										<label class="form-check-label" for="lv4B">4B</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_4b@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv4C" value="lv4C">
+										<label class="form-check-label" for="lv4C">4C</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_4c@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv5A" value="lv5A">
+										<label class="form-check-label" for="lv5A">5A</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_5a@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv5B" value="lv5B">
+										<label class="form-check-label" for="lv5B">5B</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_5b@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv5C" value="lv5C">
+										<label class="form-check-label" for="lv5C">5C</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_5c@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv6A" value="lv6A">
+										<label class="form-check-label" for="lv6A">6A</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_6a@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv6B" value="lv6B">
+										<label class="form-check-label" for="lv6B">6B</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_6b@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-md-2 mb-3">
+								<div class="border rounded-10 w-100 p-2 d-flex align-items-center justify-content-between">
+									<div>
+										<input type="radio" name="selectLevel" id="lv6C" value="lv6C">
+										<label class="form-check-label" for="lv6C">6C</label>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="https://www.readinggate.com/Content/assets/img/thumbnail/level_master/img_badge_6c@2x.png" alt="" width="20">
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-12 col-md-3">
-						<button type="button" class="btn btn-primary basic h-100 w-100 rounded-10 py-md-0">Save</button>
+					<div class="col-12 col-md-2">
+						<button type="button" class="btn btn-primary basic h-100 w-100 rounded-10">Save</button>
 					</div>
 					<div class="col-12 my-4">
 						<div class="pl-md-1">
