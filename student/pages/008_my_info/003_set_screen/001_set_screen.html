@@ -254,51 +254,113 @@
 					</div>
 				</div>
 				<div class="row mt-3 mb-3">
-					<div class="col">
+					<div class="col-12">
 						<span class="txt-dark-18 font-weight-bold">
 							시작 화면</span>
 					</div>
+					<div class="col-12">
+						<span class="txt-dark-14">
+							로그인 후 시작화면을 설정할 수 있습니다.</span>
+					</div>
 				</div>
 				<div class="row mb-3">
-					<div class="col-12">
-						<div class="form">
-							<div class="bg-pale-grey form-check mb-2 py-2 rounded-10">
-								<label class="form-check-label d-flex align-items-center">
-									<input type="radio" class="mr-3" name="intro" checked>Home
+					<div class="col-12 col-md-6 mb-3">
+						<div class="h-100 bg-pale-grey rounded-10 mb-2 p-3">
+							<div class="form">
+								<label class="d-flex align-items-center">
+									<input type="radio" class="mr-2" name="intro" checked><span
+										class="font-weight-bold">Home</span>
 								</label>
+								<div class="mt-2 txt-grey-14">
+									학습 상태 및 모든 메뉴를 한눈에 볼 수 있는 화면이 실행됩니다.
+								</div>
 							</div>
-							<div class="bg-pale-grey form-check mb-2 py-2 rounded-10">
-								<label class="form-check-label d-flex align-items-center">
-									<input type="radio" class="mr-3" name="intro">To-Do / Assignment
+						</div>
+					</div>
+					<div class="col-12 col-md-6 mb-3">
+						<div class="h-100 bg-pale-grey rounded-10 mb-2 p-3">
+							<div class="form">
+								<label class="d-flex align-items-center">
+									<input type="radio" class="mr-2" name="intro"><span
+										class="font-weight-bold">To-Do</span>
 								</label>
+								<div class="mt-2 txt-grey-14">
+									추가된 과제를 먼저 볼 수 있는 화면이 실행됩니다.
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row mt-3 mb-3">
-					<div class="col">
+					<div class="col-12">
 						<span class="txt-dark-18 font-weight-bold">
 							학습 화면</span>
 					</div>
+					<div class="col-12">
+						<span class="txt-dark-14">
+							학습 추가 기능을 설정할 수 있습니다.</span>
+					</div>
 				</div>
 				<div class="row mt-3 mb-2">
-					<div class="col-12">
-						<div class="bg-pale-grey form-check mb-2 py-2 rounded-10">
-							<input type="checkbox" id="check1" checked />
+					<div class="col-12 col-md-6 mb-3">
+						<div class="bg-pale-grey form-check mb-2 p-3 rounded-10 h-100 d-flex flex-column justify-content-between">
+							<div>
+								<div class="font-weight-bold">Step2(Vocabulary) Hint / Skip</div>
+								<div class="my-2 txt-grey-14">
+									Vocabulary 학습 단계에서 문제를 풀다가 막혔을 때, 힌트를 보거나 다음 문제로 건너뛰기를 할 수 있습니다.
+								</div>
+							</div>
 							<div class="custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input m-0" id="formCustomCheckbox44"
+								<input type="checkbox" class="custom-control-input m-0" id="step2check"
 									checked>
-								<label class="custom-control-label m-0" for="formCustomCheckbox44"></label>
-								<span>Step2(Vocabulary) Hint / Skip</span>
+								<label class="custom-control-label m-0" for="step2check"></label>
+								<span>사용</span>
 							</div>
 						</div>
-						<div class="bg-pale-grey form-check mb-2 py-2 rounded-10">
-							<input type="checkbox" id="check2" checked />
+					</div>
+					<div class="col-12 col-md-6 mb-3">
+						<div class="bg-pale-grey form-check mb-2 p-3 rounded-10 h-100 d-flex flex-column justify-content-between">
+							<div>
+								<div class="font-weight-bold">Step3(Summary) Hint</div>
+								<div class="my-2 txt-grey-14">
+									Summary 학습 단계에서 문제를 풀다가 막혔을 때, 힌트를 볼 수 있습니다.
+								</div>
+							</div>
 							<div class="custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input m-0" id="formCustomCheckbox45"
+								<input type="checkbox" class="custom-control-input m-0" id="step3check"
 									checked>
-								<label class="custom-control-label m-0" for="formCustomCheckbox45"></label>
-								<span>Step3(Summary) Hint 보기</span>
+								<label class="custom-control-label m-0" for="step3check"></label>
+								<span>사용</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 mb-3">
+						<div class="bg-pale-grey form-check mb-2 p-3 rounded-10 h-100 d-flex flex-column justify-content-between">
+							<div>
+								<div class="font-weight-bold">Listen & Repeat - Level K</div>
+								<div class="my-2 txt-grey-14">
+									KA~KC Story 단계에서 책을 2번 읽고 학습할 수 있는 Listen & Repeat 모드를 자동으로 실행합니다.
+								</div>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input m-0" id="lpKcheck">
+								<label class="custom-control-label m-0" for="lpKcheck"></label>
+								<span>사용</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 mb-3">
+						<div class="bg-pale-grey form-check mb-2 p-3 rounded-10 h-100 d-flex flex-column justify-content-between">
+							<div>
+								<div class="font-weight-bold">Listen & Repeat - Level 1</div>
+								<div class="my-2 txt-grey-14">
+									1A~1C Story 단계에서 책을 2번 읽고 학습할 수 있는 Listen & Repeat 모드를 자동으로 실행합니다.
+								</div>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input m-0" id="lp1check">
+								<label class="custom-control-label m-0" for="lp1check"></label>
+								<span>사용</span>
 							</div>
 						</div>
 					</div>
@@ -309,7 +371,7 @@
 							시스템 언어</span>
 					</div>
 				</div>
-				<div class="row mb-5">
+				<div class="row">
 					<div class="col-12 col-lg-3 mb-3">
 						<div class="form-group mb-0">
 							<select id="studyLevel" class="form-control rounded-10 select-dem txt-dark-14">
@@ -320,7 +382,9 @@
 							</select>
 						</div>
 					</div>
-					<div class="col-12 col-lg-2 mb-3">
+				</div>
+				<div class="row mb-5">
+					<div class="col-12 col-lg-3 mb-3">
 						<button type="button" class="btn btn-rg-blue p-2 w-100 rounded-10">Save</button>
 					</div>
 				</div>

@@ -267,6 +267,25 @@
 						</div>
 					</div>
 				</div>
+				<!-- 정렬 -->
+				<div class="row mb-2">
+					<div class="col-12">
+						<div class="d-flex justify-content-between align-items-center pl-1 py-1">
+							<a href="" data-toggle="dropdown"><span class="txt-dark-14 mr-2">Sort / Level</span><img
+								src="../../../assets/image/icon/sort_down.png" alt=""
+								srcset="../../../assets/image/icon/sort_down@2x.png 2x, ../../../assets/image/icon/sort_down@3x.png 3x"
+								width="10" height="5"></a>
+							<div class="dropdown-menu rounded-10 mb-2" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">Level</a>
+								<a class="dropdown-item" href="#">Date</a>
+							</div>
+
+							<!-- 레벨업 기준표 실행 -->
+							<a href="" data-toggle="modal" data-target="#levelUpGuide"><span style="font-size: 14px;">Level Master Guide</span></a>
+
+						</div>
+					</div>
+				</div>
 				<!-- 레벨 마스터 -->
 				<div class="row justify-content-center pt-2">
 					<div class="col-12 col-md-6 mb-3">
@@ -283,7 +302,7 @@
 								<div class="mb-2 txt-grey-14">
 									Date: 2021-01-02
 								</div>
-								<div class="mb-2 txt-grey-14">Level Up: 3B</div>
+								<!-- <div class="mb-2 txt-grey-14">Level Up: 3B</div> -->
 								<div class="mb-2 text-primary txt-grey-14">
 									<a href="">Certificate</a>
 								</div>
@@ -304,7 +323,7 @@
 								<div class="mb-2 px-1 txt-grey-14">
 									Date: 2021-01-01
 								</div>
-								<div class="mb-2 px-1 txt-grey-14">Level Up: 3A</div>
+								<!-- <div class="mb-2 px-1 txt-grey-14">Level Up: 3A</div> -->
 								<div class="mb-2 px-1 text-primary txt-grey-14">
 									<a href="">Certificate</a>
 								</div>
@@ -312,19 +331,13 @@
 						</div>
 					</div>
 				</div>
-				<!-- 레벨업 기준표 실행 -->
-				<div class="py-2 row">
-					<div class="col text-center">
-						<button type="button" class="border btn btn-light p-2 px-3 rounded-100 txt-dark-14"
-							data-toggle="modal" data-target="#levelUpGuide">Level Up Guide</button>
-					</div>
-				</div>
+				
 				<!-- 레벨업 기준표 팝업 -->
 				<div class="modal fade" id="levelUpGuide" tabindex="-1" aria-labelledby="character" aria-hidden="true">
 					<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 						<div class="modal-content modal-bg">
 							<div class="d-flex justify-content-between">
-								<span class="modal-title px-2">Level Up Guide</span>
+								<span class="modal-title px-2">Level Master Guide</span>
 								<a href="#" class="p-2" data-dismiss="modal" aria-label="Close"><img
 										src="../../../assets/image/icon/delete.png"
 										srcset="../../../assets/image/icon/delete@2x.png 2x, ../../../assets/image/icon/delete@3x.png 3x"
@@ -332,143 +345,120 @@
 							</div>
 							<!--레벨업 기준표 팝업: 내용-->
 							<div class="modal-body p-2">
-								<p>각 레벨의 레벨업 포인트를 달성하면 나의 학습 레벨이 레벨업 됩니다.</p>
+								<p>각 레벨의 Master Points를 획득하면 Level Master 메달을 획득할 수 있습니다.</p>
 								<div class="row text-center txt-grey-12">
-									<div class="col-4">Level</div>
-									<div class="col-4">Level Up Points</div>
-									<div class="col-4">Level Up</div>
+									<div class="col-6">Level</div>
+									<div class="col-6">Master Points</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">Pre K</div>
-									<div class="col-4">100</div>
-									<div class="col-4">KA</div>
+									<div class="col-6">Pre K</div>
+									<div class="col-6">100</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">KA</div>
-									<div class="col-4">100</div>
-									<div class="col-4">KB</div>
+									<div class="col-6">KA</div>
+									<div class="col-6">100</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">KB</div>
-									<div class="col-4">200</div>
-									<div class="col-4">KC</div>
+									<div class="col-6">KB</div>
+									<div class="col-6">200</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">KC</div>
-									<div class="col-4">450</div>
-									<div class="col-4">1A</div>
+									<div class="col-6">KC</div>
+									<div class="col-6">450</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">1A</div>
-									<div class="col-4">600</div>
-									<div class="col-4">1B</div>
+									<div class="col-6">1A</div>
+									<div class="col-6">600</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">1B</div>
-									<div class="col-4">800</div>
-									<div class="col-4">1C</div>
+									<div class="col-6">1B</div>
+									<div class="col-6">800</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">1C</div>
-									<div class="col-4">1000</div>
-									<div class="col-4">2A</div>
+									<div class="col-6">1C</div>
+									<div class="col-6">1000</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">2A</div>
-									<div class="col-4">1200</div>
-									<div class="col-4">2B</div>
+									<div class="col-6">2A</div>
+									<div class="col-6">1200</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">2B</div>
-									<div class="col-4">1300</div>
-									<div class="col-4">2C</div>
+									<div class="col-6">2B</div>
+									<div class="col-6">1300</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">2C</div>
-									<div class="col-4">1400</div>
-									<div class="col-4">3A</div>
+									<div class="col-6">2C</div>
+									<div class="col-6">1400</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">3A</div>
-									<div class="col-4">1600</div>
-									<div class="col-4">3B</div>
+									<div class="col-6">3A</div>
+									<div class="col-6">1600</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">3B</div>
-									<div class="col-4">1700</div>
-									<div class="col-4">3C</div>
+									<div class="col-6">3B</div>
+									<div class="col-6">1700</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">3C</div>
-									<div class="col-4">1800</div>
-									<div class="col-4">4A</div>
+									<div class="col-6">3C</div>
+									<div class="col-6">1800</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">4A</div>
-									<div class="col-4">1000</div>
-									<div class="col-4">4B</div>
+									<div class="col-6">4A</div>
+									<div class="col-6">1000</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">4B</div>
-									<div class="col-4">1000</div>
-									<div class="col-4">4C</div>
+									<div class="col-6">4B</div>
+									<div class="col-6">1000</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">4C</div>
-									<div class="col-4">1000</div>
-									<div class="col-4">5A</div>
+									<div class="col-6">4C</div>
+									<div class="col-6">1000</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">5A</div>
-									<div class="col-4">800</div>
-									<div class="col-4">5B</div>
+									<div class="col-6">5A</div>
+									<div class="col-6">800</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">5B</div>
-									<div class="col-4">700</div>
-									<div class="col-4">5C</div>
+									<div class="col-6">5B</div>
+									<div class="col-6">700</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">5C</div>
-									<div class="col-4">700</div>
-									<div class="col-4">6A</div>
+									<div class="col-6">5C</div>
+									<div class="col-6">700</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">6A</div>
-									<div class="col-4">700</div>
-									<div class="col-4">6B</div>
+									<div class="col-6">6A</div>
+									<div class="col-6">700</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">6B</div>
-									<div class="col-4">600</div>
-									<div class="col-4">6C</div>
+									<div class="col-6">6B</div>
+									<div class="col-6">600</div>
 								</div>
 								<hr class="my-2">
 								<div class="row text-center">
-									<div class="col-4">6C</div>
-									<div class="col-4">0</div>
-									<div class="col-4"></div>
+									<div class="col-6">6C</div>
+									<div class="col-6">0</div>
 								</div>
 							</div>
 						</div>

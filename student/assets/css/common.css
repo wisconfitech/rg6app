@@ -2074,6 +2074,16 @@ textarea {
     color: #0070FB;
 }
 
+#mPubMenu a.nav-link span {
+    color: #7F99BC;
+    font-size: 9px;
+}
+
+#mPubMenu a.nav-link.on span {
+    color: #0070FB;
+    font-size: 9px;
+}
+
 nav.navbar.navbar-expand-lg.navbar-light .bg-white {
     background-color: #f0f2f5 !important;
 }
@@ -2330,6 +2340,14 @@ nav.navbar.navbar-expand-lg.navbar-light .bg-white {
     background-color: #d9728f;
 }
 
+.bg-dodo-friends-home {
+    background-color: #d9728f;
+}
+
+.bg-dodo-friends-home-bar {
+    background-color: #901C63;
+}
+
 .bg-img-dodo-friends {
     background-image: url(../image/bg/top_banner/banner_05_2@x2.png);
     background-repeat: no-repeat;
@@ -2567,4 +2585,20 @@ nav.navbar.navbar-expand-lg.navbar-light .bg-white {
     justify-content: center;
     align-items: center;
     z-index: 999;
+}
+
+.sub-top {
+    position: sticky;
+    top: 61px;
+    background-color: #ffffff;
+    z-index: 10;
+
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.border-pale-grey {
+    border: 1px solid #f0f2f5;
 }

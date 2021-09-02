@@ -343,25 +343,47 @@
                         </div>
                     </div>
                 </div>
-                <div class="row my-1 px-2">
+
+
+                <!-- 필터 -->
+                <div class="row mb-2">
                     <div class="col-12">
-                        <div class="d-flex justify-content-between py-2">
+                        <div class="d-flex justify-content-between align-items-center pl-1 py-1">
                             <a href="" data-toggle="dropdown"><span class="txt-dark-14 mr-2">Status / All</span><img
-                                    src="../../../assets/image/icon/sort_down.png" alt=""
-                                    srcset="../../../assets/image/icon/sort_down@2x.png 2x, ../../../assets/image/icon/sort_down@3x.png 3x"
-                                    width="10" height="5"></a>
+                                src="../../../assets/image/icon/sort_down.png" alt=""
+                                srcset="../../../assets/image/icon/sort_down@2x.png 2x, ../../../assets/image/icon/sort_down@3x.png 3x"
+                                width="10" height="5"></a>
                             <div class="dropdown-menu rounded-10 mb-2" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="#">All</a>
                                 <a class="dropdown-item" href="#">Passed</a>
                                 <a class="dropdown-item" href="#">Failed</a>
                                 <hr class="my-2">
+                                <a class="dropdown-item" href="#">Writing(BR)</a>
+                                <!-- Listening, Writing은 PC 버전의 경우에만 해당되는 옵션 -->
+                                <hr class="my-2">
+                                <a class="dropdown-item" href="#">Listening</a>
                                 <a class="dropdown-item" href="#">Writing</a>
                             </div>
-                            <span class="txt-dark-14">20 Books</span>
+                            
                             <!--1권 이하일 경우 단위는 Book이라고 표시-->
+                            <div class="dropdown">
+                                <a class="btn d-flex align-items-center py-2" id="dropdownMenuButton" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <span class="txt-dark-14 mr-2">20 Books</span>
+                                    <img src="../../../assets/image/icon/menu.png"
+                                        srcset="../../../assets/image/icon/menu@2x.png 2x, ../../../assets/image/icon/menu@3x.png 3x"
+                                        alt="" width="15" height="15" />
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right rounded-10" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Download Excel List</a>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
+
+
                 <div class="row mb-3">
                     <div
                         class="col mx-3 bg-pale-grey text-center d-flex justify-content-around rounded-10 py-2 period-score">
@@ -547,7 +569,7 @@
                                         </div>
                                     </div>
                                     <div class="col-7 px-2 d-flex flex-column justify-content-between">
-                                        <div>
+                                        <div class="mb-3">
                                             <div class="txt-dark-16 ml-1 title">Billy and the Shopkeeper</div>
                                             <div class="txt-grey-14 ml-1 author">By Readinggate</div>
                                         </div>
@@ -635,6 +657,64 @@
                                         </div>
                                     </div>
                                 </div>
+
+								<!-- 도서정보: 서머리 -->
+								<div class="row my-3">
+									<div class="col-12 px-2">
+										<div class="bg-pale-grey d-flex p-2 rounded-10">
+											<div class="bg-white p-2 px-3 rounded-10 w-100 txt-dark-16">
+												Amy wants to be an animal trainer. She has her mice do tricks and her
+												sister watches their show. What tricks do they do? Let's watch it
+												together!
+											</div>
+										</div>
+									</div>
+								</div>
+                                <!-- 도서정보: 메타정보 -->
+								<div class="book-info-meta row mb-3">
+									<div class="col-12 px-2">
+										<div class="bg-pale-grey d-flex p-3 rounded-10">
+											<div class="w-100">
+												<div class="row px-2">
+													<div class="meta col-4">
+														<div>Level</div>
+														<div id="level">1A</div>
+													</div>
+													<div class="meta col-4">
+														<div>Grade</div>
+														<div id="grade">All</div>
+													</div>
+													<div class="meta col-4">
+														<div>Genre</div>
+														<div id="genre">Fiction</div>
+													</div>
+													<div class="meta col-4">
+														<div>Words</div>
+														<div id="words">1200</div>
+													</div>
+													<div class="meta col-4">
+														<div>Points</div>
+														<div id="points">99.99</div>
+													</div>
+													<div class="meta col-4">
+														<div>Passed</div>
+														<div id="passed">0 / 2</div>
+													</div>
+													<div class="meta col-4">
+														<div>Code</div>
+														<div id="bookCode">EB-1A-001</div>
+													</div>
+													<div class="meta col-4">
+														<div>Pages</div>
+														<div id="pases">60</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
                             </div>
                         </div>
                     </div>
