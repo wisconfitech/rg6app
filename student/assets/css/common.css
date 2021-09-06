@@ -2602,3 +2602,22 @@ nav.navbar.navbar-expand-lg.navbar-light .bg-white {
 .border-pale-grey {
     border: 1px solid #f0f2f5;
 }
+
+.bg-purple.rounded-10.event {
+    border-radius: 10px 0px 10px 10px;
+}
+
+.home-event-tab.nav-link {
+    border-radius: 8px 8px 0px 0px;
+    background: #43488a;
+    border: 0px;
+    cursor: pointer;
+}
+
+.home-event-tab.nav-link.active {
+    border-radius: 8px 8px 0px 0px;
+    background: #646BC8;
+    border: 0px;
+    color: #ffffff;
+    cursor: pointer;
+}
