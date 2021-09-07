@@ -217,39 +217,69 @@
 	<!--홈화면: 사용자 정보-->
 	<div class="container mt-4">
 		<div class="row">
-			<div class="col-12 col-lg-4">
-				<div class="d-flex">
-					<div class="home-user-info text-truncate">
-						<img src="https://wcfresource.a1edu.com/newsystem/image/character/maincharacter/dodo_02.png"
-							alt="" width="130">
+			<div class="col-12 col-md-6 col-lg-4">
+				<div class="position-relative">
+					<!-- 탭 버튼 -->
+					<div class="position-absolute" style="bottom: 0; right: 0;">
+						<div class="d-flex nav nav-tabs border-0">
+							<div class="px-3 py-1 txt-white-12 home-event-tab nav-link active" data-toggle="tab" href="#goalCard01">오늘 목표</div>
+							<div class="px-3 py-1 txt-white-12 home-event-tab nav-link" data-toggle="tab" href="#goalCard02">독서왕</div>
+						</div>
 					</div>
-					<div class="d-flex align-items-center">
-						<!--사용자이름-->
-						<span class="home-user-title">David Phong<a href="" class="px-2"><img
-									src="../../../assets/image/icon/icon_edit.png"
-									srcset="../../../assets/image/icon/icon_edit@2x.png 2x" alt=""
-									width="13"></a></span>
+					<!-- 사용자 아바타, 이름 -->
+					<div class="d-flex">
+						<div class="home-user-info text-truncate">
+							<img src="https://wcfresource.a1edu.com/newsystem/image/character/maincharacter/dodo_02.png"
+								alt="" width="130">
+						</div>
+						<div class="d-flex align-items-center mb-3">
+							<!--사용자이름-->
+							<span class="home-user-title">David Phong<a href="" class="px-2"><img
+										src="../../../assets/image/icon/icon_edit.png"
+										srcset="../../../assets/image/icon/icon_edit@2x.png 2x" alt=""
+										width="13"></a></span>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-12 col-md-6 col-lg-4 mb-4">
-				<div class="bg-purple rounded-10 p-3 h-102px">
-					<div class="d-flex justify-content-between align-items-center">
-						<div>
-							<div class="txt-white-14 mb-1">
-								오늘 목표 (2021-05-13)
+				<div class="tab-content">
+					<!-- 카드1: 일일목표 -->
+					<div class="tab-pane show active bg-purple event rounded-10 p-3 h-102px" id="goalCard01">
+						<div class="d-flex justify-content-between align-items-center">
+							<div>
+								<div class="txt-white-14 mb-1">
+									오늘 목표 (2021-05-13)
+								</div>
+								<div class="d-flex align-items-center">
+									<span class="txt-white-22 font-weight-bold mr-3">10 권 학습</span><a href=""><img
+											src="../../../assets/image/icon/icon_edit.png"
+											srcset="../../../assets/image/icon/icon_edit@2x.png 2x" alt=""></a>
+								</div>
 							</div>
-							<div class="d-flex align-items-center">
-								<span class="txt-white-22 font-weight-bold mr-3">10 books</span><a href=""><img
-										src="../../../assets/image/icon/icon_edit.png"
-										srcset="../../../assets/image/icon/icon_edit@2x.png 2x" alt=""></a>
+							<!-- 진행율: active를 빼면 노란색으로 바뀜 -->
+							<div class="circle-yellow goal active p-4">
+								<span class="txt-white-18 font-weight-bold">100%</span>
 							</div>
 						</div>
-						<!-- 진행율: active를 빼면 노란색으로 바뀜 -->
-						<div class="circle-yellow goal active p-4">
-							<span class="txt-white-18 font-weight-bold">100%</span>
+					</div>
+					<!-- 카드2: 독서왕 -->
+					<div class="tab-pane bg-purple event rounded-10 p-3 h-102px" id="goalCard02">
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="w-100">
+								<div class="txt-white-14 mb-1">
+									<!-- 메세지가 3초에 한번씩 바뀜 -->
+									<span class="mr-2" id="korMsg1">영어독서왕 참여 현황 (09-06~12-04)</span><span class="mr-2 d-none" id="korMsg2">종료일까지 70일 남았습니다.</span><a href=""><img src="../../../assets/image/icon/icon_edit.png" srcset="../../../assets/image/icon/icon_edit@2x.png 2x" alt=""></a>
+								</div>
+								<div class="txt-white-14 d-flex justify-content-between">
+									<span class="mr-2">· 학습일수:</span><span>1 / 85 days</span>
+								</div>
+								<div class="txt-white-14 d-flex justify-content-between">
+									<span class="mr-2">· 포인트 획득:</span><span>1500.33 / 50000 pt</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
