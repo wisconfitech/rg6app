@@ -11,6 +11,7 @@
 	<link href="../../../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="../../../assets/css/font.css" rel="stylesheet" type="text/css">
 	<link href="../../../assets/css/common.css" rel="stylesheet" type="text/css">
+	<link href="../../../assets/css/hj_bookR.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="space-top">
@@ -457,13 +458,14 @@
 					<div class="row mb-2 text-center">
 						<div class="col p-4">
 							<a href="" data-toggle="modal" data-target="#character"><img
-									src="https://wcfresource.a1edu.com/newsystem/image/character/subcharacter/gino_01.png"
+									src="https://wcfresource.a1edu.com/newsystem/image/character/dodofriends/jack-002.png"
 									alt="" width="150"></a>
 						</div>
 					</div>
+
 					<!-- 조회된 도서 리스트 -->
-					<div class="row mb-2 book-list justify-contents-center">
-						<div class="col d-flex flex-column align-items-center">
+					<div class="row justify-contents-center">
+						<div class="col d-flex flex-column align-items-center book_list">
 							<div>
 								<div data-toggle="modal" data-target="#assessmentInfo">The Adventures of Maya the Bee
 									3
@@ -484,30 +486,13 @@
 							<div>
 								<div data-toggle="modal" data-target="#assessmentInfo">Run, Run, Run!</div>
 							</div>
-							<div>
-								<div data-toggle="modal" data-target="#assessmentInfo">I Like My Family</div>
-							</div>
-							<div>
-								<div data-toggle="modal" data-target="#assessmentInfo">What I Want to Be</div>
-							</div>
-							<div>
-								<div data-toggle="modal" data-target="#assessmentInfo">Too Much Fruit!</div>
-							</div>
-							<div>
-								<div data-toggle="modal" data-target="#assessmentInfo">The Red-Headed League</div>
-							</div>
-							<div>
-								<div data-toggle="modal" data-target="#assessmentInfo">The Adventures of Huckleberry
-									Finn
-								</div>
-							</div>
-							<div>
-								<div data-toggle="modal" data-target="#assessmentInfo">The Tragedy of Orpheus and
-									Eurydice
-								</div>
-							</div>
+				            <ul class="dodo">
+                                <!--<li class="dodo_d">DODO</li>-->
+                                <li class="dodo_smile">DODO</li>
+						    </ul>
 						</div>
 					</div>
+
 					<!-- 조회된 도서 리스트: Assessment Info 팝업 -->
 					<div class="modal fade" id="assessmentInfo" tabindex="-1" aria-labelledby="bookInfo"
 						aria-hidden="true">
@@ -670,21 +655,22 @@
 							</div>
 						</div>
 					</div>
+					
+					<!-- 더보기 -->
+					<div class="col text-center btn_view">
+                        <p>View More</p>
+                        <p></p>
+					</div>
 					<!-- 퍼포먼스 리포트 출력 -->
 					<div class="row mb-4">
 						<div class="col text-center">
 							<button type="button"
-								class="border btn btn-light p-2 px-3 rounded-100 txt-dark-14">Performance
-								Report
+								class="btn p-2 px-3 btn_pr">Performance
+								Report <span class="ico_pr"></span>
 							</button>
 						</div>
 					</div>
-					<!-- 더보기 -->
-					<div class="row pb-4 pb-md-5">
-						<div class="col text-center">
-							<a href="">See More</a>
-						</div>
-					</div>
+
 				</div>
 			</div>
 		</div>
