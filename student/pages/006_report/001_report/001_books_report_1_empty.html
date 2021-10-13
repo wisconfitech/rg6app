@@ -11,6 +11,7 @@
 	<link href="../../../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="../../../assets/css/font.css" rel="stylesheet" type="text/css">
 	<link href="../../../assets/css/common.css" rel="stylesheet" type="text/css">
+	<link href="../../../assets/css/hj_bookR.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="space-top">
@@ -200,16 +201,16 @@
 		</div>
 	</div>
 	<!-- 상단 베너 -->
-    <div class="bg-book-report w-100">
-        <div class="align-items-center bg-img-book-report container d-flex justify-content-between py-4">
-            <div class="ml-lg-1">
-                <h5 class="text-light mb-0"><span>Report</span><img
-                        src="../../../assets/image/icon/mini_right_arrow.png" alt=""
-                        srcset="../../../assets/image/icon/mini_right_arrow@2x.png 2x, ../../../assets/image/icon/mini_right_arrow@3x.png 3x"
-                        class="mx-2" /><span>Book Report</span></h5>
-            </div>
-        </div>
-    </div>
+	<div class="bg-book-report w-100">
+		<div class="align-items-center bg-img-book-report container d-flex justify-content-between py-4">
+			<div class="ml-lg-1">
+				<h5 class="text-light mb-0"><span>Report</span><img
+						src="../../../assets/image/icon/mini_right_arrow.png" alt=""
+						srcset="../../../assets/image/icon/mini_right_arrow@2x.png 2x, ../../../assets/image/icon/mini_right_arrow@3x.png 3x"
+						class="mx-2" /><span>Book Report</span></h5>
+			</div>
+		</div>
+	</div>
 	<!--Report 메뉴-->
 	<div class="w-100 border-bottom d-block d-lg-none bg-white">
 		<div class="container">
@@ -387,13 +388,82 @@
 					</div>
 				</div>
 				<!-- 빈 화면: 검색한 도서가 없는 경우 -->
-				<div class="row">
-					<div class="col-12">
-						<div class="box no-list">
-							<span>검색 결과가 없습니다.</span>
+				<div class="bookbook border rounded-10 mb-4 bg-white">
+					<!-- 현재 진행중인 캐릭터 -->
+					<div class="row mb-2 text-center">
+						<div class="col p-4">
+							<a href="" data-toggle="modal" data-target="#character"><img
+									src="https://wcfresource.a1edu.com/newsystem/image/character/dodofriends/jack-002.png"
+									alt="" width="150"></a>
 						</div>
 					</div>
+
+					<!-- 출력할 리스트가 없을 때 -->
+					<div class="row justify-contents-center">
+						<div class="col d-flex flex-column align-items-center book_list">
+							<ul class="dodo">
+								<li class="dodo_d">DODO</li>
+								<!--<li class="dodo_smile">DODO</li>-->
+							</ul>
+						</div>
+					</div>
+
+					<!-- 캐릭터 애니메이션 팝업 -->
+					<div class="modal fade" id="character" tabindex="-1" aria-labelledby="character" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+							<div class="modal-content modal-bg">
+								<div class="d-flex justify-content-between">
+									<span class="modal-title px-2">Dodo Friends</span>
+									<a href="#" class="p-2" data-dismiss="modal" aria-label="Close"><img
+											src="../../../assets/image/icon/delete.png"
+											srcset="../../../assets/image/icon/delete@2x.png 2x, ../../../assets/image/icon/delete@3x.png 3x"
+											alt=""></a>
+								</div>
+								<!--!캐릭터 팝업: 내용-->
+								<div class="modal-body container book-info">
+									<!-- 성장 과정 보기 버튼 그룹 -->
+									<div class="character-growth d-flex justify-content-between">
+										<button class="btn active">1</button>
+										<button class="btn">2</button>
+										<button class="btn">3</button>
+										<button class="btn">4</button>
+										<button class="btn lock">
+											<img src="../../../assets/image/icon/lock_icon.png"
+												srcset="../../../assets/image/icon/lock_icon@2x.png 2x, ../../../assets/image/icon/lock_icon@3x.png 3x"
+												width="14">
+										</button>
+									</div>
+									<!-- 캐릭터 애니메이션 -->
+									<div class=" character-ani mb-3">
+										<img src="../../../assets/image/gif/gino.gif" />
+									</div>
+									<!-- 캐릭터 설명 -->
+									<div class="character-dream">
+										<div class="title">해적왕을 꿈꾸는 해적 선원 바로</div>
+										<div class="contents">안녕! 난 바로야. 난 멋진 해적왕이 되기 위해 해적 선원이 되었어!</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 더보기 -->
+					<!--<div class="btn_view">
+                        <p>View More</p>
+                        <p></p>
+					</div>-->
+					<!-- 퍼포먼스 리포트 출력 -->
+					<!-- <div class="row mb-4">
+						<div class="col text-center">
+							<button type="button"
+								class="btn p-2 px-3 btn_pr">Performance
+								Report <span class="ico_pr"></span>
+							</button>
+						</div>
+					</div> -->
+
 				</div>
+
 			</div>
 		</div>
 	</div>

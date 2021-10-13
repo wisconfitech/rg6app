@@ -313,9 +313,10 @@
 						<div class="w-100 d-flex">
 							<a href="" id="dropdownMenuButton2" class="text-dark w-100" data-toggle="modal"
 								data-target="#selectLevelModal">
-								<div class="btn-lib-level py-2 px-3 mx-0 d-flex justify-content-between align-items-center">
-									<span class="d-flex align-items-center"> <span class="mr-2">My Level</span> <span> <img
-												src="../../../assets/image/icon/mini_right_arrow.png" alt=""
+								<div
+									class="btn-lib-level py-2 px-3 mx-0 d-flex justify-content-between align-items-center">
+									<span class="d-flex align-items-center"> <span class="mr-2">My Level</span> <span>
+											<img src="../../../assets/image/icon/mini_right_arrow.png" alt=""
 												srcset="../../../assets/image/icon/mini_right_arrow@2x.png 2x, ../../../assets/image/icon/mini_right_arrow@3x.png 3x"
 												class="mr-2" /> </span> <span
 											class="txt-dark-16 font-weight-bold mr-2">KA</span> <span
@@ -328,8 +329,11 @@
 								</div>
 							</a>
 							<!-- 검색버튼 -->
-							<a href="" class="btn-lib-level ml-2 px-3 d-flex align-items-center justify-content-center"><img src="../../../assets/image/icon/search_filled.png" 
-								srcset="../../../assets/image/icon/search_filled@2x.png 2x, ../../../assets/image/icon/search_filled@3x.png 3x" alt="" width="14"></a>
+							<a href=""
+								class="btn-lib-level ml-2 px-3 d-flex align-items-center justify-content-center"><img
+									src="../../../assets/image/icon/search_filled.png"
+									srcset="../../../assets/image/icon/search_filled@2x.png 2x, ../../../assets/image/icon/search_filled@3x.png 3x"
+									alt="" width="14"></a>
 						</div>
 						<!--레벨선택:팝업-->
 						<div class="modal fade" id="selectLevelModal" tabindex="-1" aria-labelledby="selectLevelModal"
@@ -486,25 +490,28 @@
 				<div class="row mb-2">
 					<div class="col-12">
 						<div class="d-flex justify-content-between align-items-center pl-1 py-1">
-							<a href="" data-toggle="modal" data-target="#filter"><span class="txt-dark-14 mr-2">Filter /
-								All Books</span><img src="../../../assets/image/icon/sort_down.png" alt=""
-								srcset="../../../assets/image/icon/sort_down@2x.png 2x, ../../../assets/image/icon/sort_down@3x.png 3x"
-								width="10" height="5"></a>
-							
+							<a href="" data-toggle="modal" data-target="#filter"><span class="txt-dark-14 mr-2">All
+									Books / 선호도순</span><img src="../../../assets/image/icon/sort_down.png" alt=""
+									srcset="../../../assets/image/icon/sort_down@2x.png 2x, ../../../assets/image/icon/sort_down@3x.png 3x"
+									width="10" height="5"></a>
+
 							<!--1권 이하일 경우 단위는 Book이라고 표시-->
 							<div class="dropdown">
-								<a class="btn d-flex align-items-center py-2" id="dropdownMenuButton" data-toggle="dropdown"
-									aria-haspopup="true" aria-expanded="false">
+								<a class="btn d-flex align-items-center py-2" id="dropdownMenuButton"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									<span class="txt-dark-14 mr-2">20 Books</span>
 									<img src="../../../assets/image/icon/menu.png"
 										srcset="../../../assets/image/icon/menu@2x.png 2x, ../../../assets/image/icon/menu@3x.png 3x"
 										alt="" width="15" height="15" />
 								</a>
-								<div class="dropdown-menu dropdown-menu-right rounded-10" aria-labelledby="dropdownMenuButton">
+								<div class="dropdown-menu dropdown-menu-right rounded-10"
+									aria-labelledby="dropdownMenuButton">
 									<a class="dropdown-item" href="#">Download Excel List</a>
+									<a class="dropdown-item" href="#">View 1st Full Books</a>
+									<a class="dropdown-item" href="#">View 1st Easy Books</a>
 								</div>
 							</div>
-							
+
 						</div>
 					</div>
 				</div>
@@ -772,7 +779,8 @@
 								<div class="row">
 									<div class="col-12 px-2 py-0 mb-3">
 										<div class="form-group mb-0 w-100">
-											<select id="calssRoom" class="form-control rounded-10 select-dem txt-dark-14">
+											<select id="calssRoom"
+												class="form-control rounded-10 select-dem txt-dark-14">
 												<option>1-1</option>
 												<option>민들레반</option>
 											</select>
@@ -927,22 +935,25 @@
 			</div>
 		</div>
 		<!--일괄작업: 도서에 체크박스를 체크하면 활성화-->
-		<div class="fixed-bottom d-none">
+		<div class="fixed-bottom d-block">
 			<div class="bg-selected p-2 px-3 text-center txt-white-16">
 				<div class="container">
 					<!-- 일괄작업: 선택후 작업 -->
 					<div class="row">
+						<div class="position-absolute" style="right: 10px;"><button class="btn"><img
+									src="../../../assets/image/icon/delete_white.png" alt="" width="25px"></button>
+						</div>
 						<!-- 반선택: 소속반이 2개 이상인 경우에만 노출 -->
-						<!-- <div class="col-12 mb-2 d-flex align-items-center justify-content-center">
-                            <a href="" data-toggle="dropdown"><span class="txt-white-14 mr-2">Group:
-                                    1-1</span><img src="../../../assets/image/icon/sort_down.png" alt=""
-                                    srcset="../../../assets/image/icon/sort_down@2x.png 2x, ../../../assets/image/icon/sort_down@3x.png 3x"
-                                    width="10" height="5"></a>
-                            <div class="dropdown-menu rounded-10 mb-2" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">1-1</a>
-                                <a class="dropdown-item" href="#">방과후반</a>
-                            </div>
-                        </div> -->
+						<div class="col-12 mb-2 d-flex align-items-center justify-content-center">
+							<a href="" data-toggle="dropdown"><span class="txt-white-14 mr-2">Group:
+									1-1</span><img src="../../../assets/image/icon/sort_down.png" alt=""
+									srcset="../../../assets/image/icon/sort_down@2x.png 2x, ../../../assets/image/icon/sort_down@3x.png 3x"
+									width="10" height="5"></a>
+							<div class="dropdown-menu rounded-10 mb-2" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">1-1</a>
+								<a class="dropdown-item" href="#">방과후반</a>
+							</div>
+						</div>
 						<div class="col-12 d-flex justify-content-center align-items-center">
 							<div class="mr-2">Selected: 10</div>
 							<div class="selected dropdown">

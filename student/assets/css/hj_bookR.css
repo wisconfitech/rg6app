@@ -1,0 +1,144 @@
+/*공통*/
+
+* {margin:0; padding:0; box-sizing: border-box; }
+ul, li {list-style: none;}
+a {text-decoration: none;}
+/* img {vertical-align: top;} */
+
+
+/*북리포트 > 퍼포먼스*/
+
+
+.book_list {
+    background-image: url(../image/book_report/book_shelve@1.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 33px; /*바닥책 위치*/
+    margin-top: 80px;
+    position: relative;
+}
+
+.book_list > div {
+    width: 172px;
+    height: 56px;
+    background-size: contain;    
+    line-height: 56px;
+    text-align: center;
+    padding: 0 1.6rem 0;  
+    cursor: pointer;
+}
+
+
+.book_list > div:nth-child(1n) {
+    background-image: url(../image/book_report/book_bg_red@x2.png);  
+}
+
+.book_list > div:nth-child(1n):hover {
+    color: #e05139;
+}
+
+.book_list > div:nth-child(2n) {
+    background-image: url(../image/book_report/book_bg_yellow@x2.png);
+}
+
+.book_list > div:nth-child(2n):hover {
+    color: #e3760c;
+}
+
+.book_list > div:nth-child(3n) {
+    background-image: url(../image/book_report/book_bg_green@x2.png);
+}
+
+.book_list > div:nth-child(3n):hover {
+    color: #367e06;
+}
+
+.book_list > div > div {
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow:ellipsis; 
+}
+
+
+.btn_pr {
+    width: 230px;
+    line-height:  30px;
+    background-color: #e13636;
+    color: #fff;
+    font-size: 0.9rem;
+    border:5px solid #eef0f3;
+    border-radius: 14px;
+    margin-bottom: 1rem;
+}
+
+.btn_pr:hover {
+    background-color: #d81d1d; 
+    color: #fff;
+}
+
+.ico_pr {
+    width: 18px;
+    height: 18px;
+    background-image: url(../image/book_report/btn_ico@x2.png);
+    background-size: cover;
+    vertical-align: bottom;
+    margin-bottom: 5px;
+    margin-left: 4px;
+    display: inline-block;
+}
+
+.btn_view {
+    cursor: pointer;
+}
+
+.btn_view p{
+    width: 200px;
+    height: 26px;
+    margin: 0 auto;
+    color:#555;
+    font-weight: 800;    
+}
+
+.btn_view p:hover {
+    color: #000;
+}
+
+.btn_view p:last-child {
+    width: 22px;
+    height: 22px;
+    background-image: url(../image/book_report/btn_ico_view@x2.png);
+    background-size: contain;
+    margin-bottom: 1.2rem;
+}
+
+.dodo li {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: contain;
+    text-indent: -9999px;
+}
+
+.dodo_d {
+    bottom: 40px;
+    background-image: url(../image/book_report/dodo_d@x2.gif);
+}
+
+.dodo_smile {
+    top:-101px;
+    background-image: url(../image/book_report/dodo_smile@x2.gif);
+}
+
+
+
+
+
+
+
+
+
+
+
+
